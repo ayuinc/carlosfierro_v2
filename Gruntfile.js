@@ -167,10 +167,11 @@ module.exports = function (grunt) {
             // '<%= project.src %>/js/lib/ScrollToPlugin.js',
             // '<%= project.src %>/js/lib/ScrollMagic.js',
             // '<%= project.src %>/js/lib/jquery.scrollmagic.debug.js',
-            // '<%= project.src %>/js/lib/imagesloaded.pkgd.min.js',
-            // '<%= project.src %>/js/lib/isotope.pkgd.min.js',
-            // '<%= project.src %>/js/lib/lickity.pkgd.min.js',
-            // '<%= project.src %>/js/lib/transformicons.js',
+            '<%= project.src %>/js/lib/imagesloaded.pkgd.min.js',
+            '<%= project.src %>/js/lib/isotope.pkgd.min.js',
+            '<%= project.src %>/js/lib/flickity.pkgd.min.js',
+            '<%= project.src %>/js/lib/transformicons.js',
+            '<%= project.src %>/js/lib/nav-filters.js',
             '<%= project.src %>/js/lib/coffeeCompile.js'
           ]
         }
@@ -423,18 +424,18 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    'sass:ebm',
+    // 'sass:ebm',
     'sass:dev',
-    'bower:dev',
+    // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
-    'responsive_images:dev',
+    // 'responsive_images:dev',
     'responsive_images_extender:dev',
     'connect:livereload',
     'uglify',
-    'open',
+    // 'open',
     'watch'
   ]);
 
