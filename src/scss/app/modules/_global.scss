@@ -342,7 +342,7 @@ $brand-systems: #3db9ea;
 
 .gallery-nav {
 	float: right;
-	width: $screen-phone;
+	width: $screen-tablet / 2;
 	.gallery-cell {
 		overflow: hidden;
 		width: 30%;
@@ -359,7 +359,7 @@ $brand-systems: #3db9ea;
 
 .gallery-counter {
 	@include position(absolute, null 0 0 null);
-	width: $screen-phone;
+	width: $screen-tablet / 2;
 	height: 22px;
 	background-color: rgba($gray-darker, 0.9);
 	.gallery-cell {

@@ -20,5 +20,8 @@
       </ul>
       <ul class="nav-project-items-mini-grid"></ul>
     <?php endif; ?>
+    <?php if (is_page_template( 'page-media.php' )):  ?>
+      <ul class="nav-project-items-mini-grid"></ul>
+    <?php endif; ?>
   </div>
 </aside>
