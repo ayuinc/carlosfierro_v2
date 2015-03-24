@@ -17,7 +17,7 @@
 
     ?>
     <!-- </ul> -->
-    <?php if is_page_template( 'page-works.php' )  ?>
+    <?php if (is_page_template( 'page-works.php' )):  ?>
       <ul class="nav-project-grid-filters mv-42">
         <li><a href="#" class="* all active" data-filter="*">All</a></li>
         <li><a href="#" class="spaces" data-filter=".spaces">Spaces</a></li>
