@@ -63,4 +63,4 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Wordpress
-wp-content/uploads
+wp-content/uploads/**
