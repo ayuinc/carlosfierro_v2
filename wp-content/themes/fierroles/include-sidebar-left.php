@@ -10,11 +10,11 @@
 
       $defaults = array(
         'container' => false,
-        'theme_location' => 'main-menu'
+        'theme_location' => 'main-menu',
         'menu_class' => 'list-unstyled uppercase lintel-regular pv-7'
         );
       wp_nav_menu ($defaults);
-      
+
     ?>
     <!-- </ul> -->
     <ul class="nav-project-grid-filters mv-42">
