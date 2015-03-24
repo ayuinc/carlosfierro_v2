@@ -35,12 +35,24 @@
         <span class="year"><?php the_field('year'); ?></span>
       </div>
       <div class="gallery-nav js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "asNavFor": ".gallery", "pageDots": false, "prevNextButtons": false }'>
-        <div class="gallery-cell">
-          <img src="assets/img/img.png" alt="Image" class="ignore-srcset">
-        </div>
+        <?php 
+          $images = get_field('gallery');
+          if( $images ): ?>
+          <?php foreach( $images as $image ): ?>
+            <div class="gallery-cell">
+              <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>" />
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
       </div>
       <div class="gallery-counter js-flickity" data-flickity-options='{ "asNavFor": ".gallery", "pageDots": false, "prevNextButtons": false}'>
-        <div class="gallery-cell"></div>
+        <?php 
+          $images = get_field('gallery');
+          if( $images ): ?>
+          <?php foreach( $images as $image ): ?>
+            <div class="gallery-cell"></div>
+          <?php endforeach; ?>
+        <?php endif; ?>
       </div>
     </div>
     <?php endwhile; endif; ?>
