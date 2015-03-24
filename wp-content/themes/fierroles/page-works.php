@@ -18,7 +18,16 @@
   <main class="main-content works-padding" role="main">
     <ul class="projects-grid isotope-container">
       <?php if ( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-        <li class="isotope-item systems" data-minigrid="systems">
+        <li 
+          <?php 
+            $term = get_field('taxonomy');
+            if( $term ): ?>
+            class="isotope-item <?php echo $term->name; ?>"
+            data-minigrid="<?php echo $term->name; ?>"
+          <?php else: ?>
+            class="isotope-item"
+          <?php endif; ?>
+          >
           <a href="<?php the_permalink(); ?>">
             <div class="project-thumbnail">
               <?php if( get_field('image') ): ?>
