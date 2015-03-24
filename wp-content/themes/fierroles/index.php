@@ -1,55 +1,15 @@
+<?php 
+/*
+  Template Name: Splash
+*/
+?>
+
 <?php get_header(); ?>
-  <?php get_template_part( 'include', 'sidebar-left' ); ?>
-  <main class="main-content" role="main">
-    <ul class="projects-grid isotope-container">
-      <li class="isotope-item systems" data-minigrid="systems">
-        <a href="#">
-          <div class="project-thumbnail">
-            <img src="assets/img/img.png" alt="Image" class="ignore-srcset">
-          </div>
-          <div class="overlay">
-            <h2 class="project-title">Developing</h2>
-            <div class="name-year"><span class="name">Name</span><br><span class="year">2013</span></div>
-            <small class="location">New York, USA</small>
-          </div>
-        </a>
-      </li>
-      <li class="isotope-item objects" data-minigrid="objects">
-        <a href="#">
-          <div class="project-thumbnail">
-            <img src="assets/img/img.png" alt="Image" class="ignore-srcset">
-          </div>
-          <div class="overlay">
-            <h2 class="project-title">Developing</h2>
-            <div class="name-year"><span class="name">Name</span><br><span class="year">2013</span></div>
-            <small class="location">New York, USA</small>
-          </div>
-        </a>
-      </li>
-      <li class="isotope-item spaces" data-minigrid="spaces">
-        <a href="#">
-          <div class="project-thumbnail">
-            <img src="assets/img/img.png" alt="Image" class="ignore-srcset">
-          </div>
-          <div class="overlay">
-            <h2 class="project-title">Developing</h2>
-            <div class="name-year"><span class="name">Name</span><br><span class="year">2013</span></div>
-            <small class="location">New York, USA</small>
-          </div>
-        </a>
-      </li>
-      <li class="isotope-item systems" data-minigrid="systems">
-        <a href="#">
-          <div class="project-thumbnail">
-            <img src="assets/img/img.png" alt="Image" class="ignore-srcset">
-          </div>
-          <div class="overlay">
-            <h2 class="project-title">Developing</h2>
-            <div class="name-year"><span class="name">Name</span><br><span class="year">2013</span></div>
-            <small class="location">New York, USA</small>
-          </div>
-        </a>
-      </li>
-    </ul>
+  <main class="main-content minhp-100 flex-middle-center" role="main">
+    <h1 class="h4 uppercase text-gray-dark lintel-bold m-0">Carlos Fierro</h1>
+    <nav class="ph-ch-21">
+      <a href="#">EN</a>
+      <a href="#">ES</a>
+    </nav>
   </main>
 <?php get_footer(); ?>
