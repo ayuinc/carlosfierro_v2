@@ -4736,6 +4736,7 @@ body::-webkit-scrollbar {
   width: 280px;
   height: 490px;
   font-size: 11px;
+  text-align: justify;
 }
 
 .flickity-prev-next-button.previous, .flickity-prev-next-button.next {
