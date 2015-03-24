@@ -22,8 +22,8 @@
           <?php 
             $term = get_field('taxonomy');
             if( $term ): ?>
-            class="isotope-item <?php echo $term->name; ?>"
-            data-minigrid="<?php echo $term->name; ?>"
+            class="isotope-item <?php echo $term->slug; ?>"
+            data-minigrid="<?php echo $term->slug; ?>"
           <?php else: ?>
             class="isotope-item"
           <?php endif; ?>
