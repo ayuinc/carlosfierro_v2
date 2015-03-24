@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <?php get_template_part( '', 'include-sidebar-left' ); ?>
+  <?php get_template_part( 'include', 'sidebar-left' ); ?>
   <main class="main-content" role="main">
     <ul class="projects-grid isotope-container">
       <li class="isotope-item systems" data-minigrid="systems">

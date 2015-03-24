@@ -40,7 +40,8 @@ module.exports = function (grunt) {
     project: {
       src: 'src',
       app: 'app',
-      assets: '<%= project.app %>/assets',
+      // assets: '<%= project.app %>/assets',
+      assets: 'wp-content/themes/fierroles/assets',
       css: [
         '<%= project.src %>/scss/style.scss'
       ],
