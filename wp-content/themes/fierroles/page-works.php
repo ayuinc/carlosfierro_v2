@@ -30,8 +30,10 @@
           >
           <a href="<?php the_permalink(); ?>">
             <div class="project-thumbnail">
-              <?php if( get_field('image') ): ?>
-                <img src="<?php the_field('image'); ?>" />
+              <?php 
+                $image = get_field('image');
+                if( !empty($image) ): ?>
+                  <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>" />
               <?php endif; ?>
             </div>
             <div class="overlay">              
