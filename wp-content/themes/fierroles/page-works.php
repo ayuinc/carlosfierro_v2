@@ -23,9 +23,11 @@
             <div class="project-thumbnail">
               <?php 
                 $image = get_field('image');
-                if( !empty($image) ): ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" />
-              <?php endif; ?>
+                $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                if( $image ) {
+                  echo wp_get_attachment_image( $image, $size );
+                }
+              ?>
             </div>
             <div class="overlay">              
               <h2 class="project-title"><?php the_field('tag'); ?></h2>
