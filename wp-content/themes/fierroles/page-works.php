@@ -22,12 +22,10 @@
           <a href="<?php the_permalink(); ?>">
             <div class="project-thumbnail">
               <?php 
-                $attachment_id = 8; // attachment ID
-                $image_attributes = wp_get_attachment_image_src( $attachment_id ); // returns an array
-                if( $image_attributes ) {
-              ?> 
-                <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" alt="" class="ignore-srcset">
-              <?php } ?>
+                $image = get_field('image');
+                if( !empty($image) ): ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" />
+              <?php endif; ?>
             </div>
             <div class="overlay">              
               <h2 class="project-title"><?php the_field('tag'); ?></h2>
