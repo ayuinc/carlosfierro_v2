@@ -1,6 +1,7 @@
 <?php
 
 	add_theme_support( 'menus' );
+	add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
 	add_theme_support( 'post-thumbnails' );
 
 	function register_theme_menus(){
