@@ -1,9 +1,3 @@
-<?php 
-/*
-  Template Name: Works - single
-*/
-?>
-
 <?php get_header(); ?>
   <?php get_template_part( 'include', 'sidebar-left' ); ?>
   <main class="main-content works-padding" role="main">
