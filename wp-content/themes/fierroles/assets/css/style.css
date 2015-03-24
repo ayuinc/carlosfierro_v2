@@ -3174,9 +3174,9 @@ input[type="button"].btn-block {
 /* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
   position: absolute;
-  top: 50%;
-  width: 21px;
-  height: 21px;
+  top: 63%;
+  width: 28px;
+  height: 28px;
   border: none;
   background-color: rgba(101, 104, 106, 0.9);
   cursor: pointer;
@@ -4722,7 +4722,7 @@ body::-webkit-scrollbar {
 .project-details {
   position: absolute;
   bottom: 0;
-  left: 42px;
+  left: 28px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -4733,7 +4733,7 @@ body::-webkit-scrollbar {
   transform: translateY(100%);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 14px;
-  width: 340px;
+  width: 280px;
   height: 490px;
   font-size: 11px;
 }
@@ -4757,11 +4757,11 @@ body::-webkit-scrollbar {
 
 .gallery-nav {
   float: right;
-  width: 384px;
+  width: 256px;
 }
 .gallery-nav .gallery-cell {
   overflow: hidden;
-  width: 30%;
+  width: 50%;
   height: 84px;
 }
 .gallery-nav .gallery-cell img {

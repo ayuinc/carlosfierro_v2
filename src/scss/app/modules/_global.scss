@@ -309,12 +309,12 @@ $brand-systems: #3db9ea;
 	text-align: right;
 }
 .project-details {
-	@include position(absolute, null null 0 ($container-fluid * 3));
+	@include position(absolute, null null 0 ($container-fluid * 2));
 	@include transition(all 0.2s ease-in-out);
 	@include transform(translateY(100%));
 	background-color: rgba(white, 0.9);
 	padding: $container-fluid;
-	width: $screen-phone - 140px;
+	width: 280px;
 	height: 490px;
 	font-size: 11px;
 }
@@ -342,10 +342,10 @@ $brand-systems: #3db9ea;
 
 .gallery-nav {
 	float: right;
-	width: $screen-tablet / 2;
+	width: $screen-tablet / 3;
 	.gallery-cell {
 		overflow: hidden;
-		width: 30%;
+		width: 50%;
 		height: 84px;
 		img {
 			width: 100%;
