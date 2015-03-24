@@ -21,13 +21,9 @@
         <li class="isotope-item systems" data-minigrid="systems">
           <a href="<?php the_permalink(); ?>">
             <div class="project-thumbnail">
-              <?php 
-                $image = get_field('image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if( $image ) {
-                  echo wp_get_attachment_image( $image, $size );
-                }
-              ?>
+              <?php if( get_field('image') ): ?>
+                <img src="<?php the_field('image'); ?>" />
+              <?php endif; ?>
             </div>
             <div class="overlay">              
               <h2 class="project-title"><?php the_field('tag'); ?></h2>
