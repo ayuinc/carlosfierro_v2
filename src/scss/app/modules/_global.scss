@@ -401,8 +401,11 @@ $gallery-container-height: 420px;
 	.btn {
 		float: right;
 		background-color: $gray-lighter !important; 
+		color: $gray-dark;
+		border: none;
 		&:hover {
 			background-color: darken($gray-lighter, 3%) !important; 
+			color: $gray-darker;
 		}
 	}
 }

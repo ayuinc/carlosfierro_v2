@@ -4813,9 +4813,12 @@ body::-webkit-scrollbar {
 .wpcf7-form .btn {
   float: right;
   background-color: #F0F0F0 !important;
+  color: #65686a;
+  border: none;
 }
 .wpcf7-form .btn:hover {
   background-color: #e8e8e8 !important;
+  color: #313233;
 }
 
 a.btn.form-control,
