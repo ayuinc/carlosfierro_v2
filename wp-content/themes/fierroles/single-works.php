@@ -8,8 +8,8 @@
           $images = get_field('gallery');
           if( $images ): ?>
           <?php foreach( $images as $image ): ?>
-            <div class="gallery-cell">
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" />
+            <div class="gallery-cell bg-img-block" style="background-image: url(<?php echo $image['url']; ?>)">
+              <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" /> -->
             </div>
           <?php endforeach; ?>
         <?php endif; ?>
