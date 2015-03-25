@@ -271,11 +271,12 @@ $brand-systems: #3db9ea;
 
 
 /* Project gallery */
+$gallery-container-height: 420px;
 .gallery-container {
 	position: relative;
 	overflow: hidden; 
 	margin-bottom: 21px;
-	height: 420px;
+	height: $gallery-container-height;
 	&.display-project-details {
 		.project-details {
 			@include transition(all 0.2s ease-in-out);
@@ -304,7 +305,9 @@ $brand-systems: #3db9ea;
 	color: white;
 }
 .project-name-year {
-	@include position(absolute, -49px null null -14%);
+	@include position(absolute, -49px null null 0);
+	width: 210px;
+	padding-right: $container-fluid * 2;
 	font-size: 11px;
 	text-align: right;
 }
@@ -315,7 +318,7 @@ $brand-systems: #3db9ea;
 	background-color: rgba(white, 0.9);
 	padding: $container-fluid;
 	width: 280px;
-	height: 490px;
+	height: $gallery-container-height - 35px;
 	font-size: 11px;
 	text-align: justify;
 }
