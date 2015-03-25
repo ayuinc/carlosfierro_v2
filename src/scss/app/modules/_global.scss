@@ -396,7 +396,16 @@ $gallery-container-height: 420px;
 	}
 }
 
-
+// CONTACT FORMS 7
+.wpcf7-form {
+	.btn {
+		float: right;
+		background-color: $gray-lighter !important; 
+		&:hover {
+			background-color: darken($gray-lighter, 3%) !important; 
+		}
+	}
+}
 
 
 
