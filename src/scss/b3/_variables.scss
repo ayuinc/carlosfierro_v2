@@ -15,7 +15,7 @@ $gray:                   #898b8e !default; // #555
 $gray-light:             #d2d3d4 !default; // #777
 $gray-lighter:           #F0F0F0 !default; // #eee
 
-$brand-primary:         #428bca !default;
+$brand-primary:         $gray-lighter !default;
 $brand-success:         #3c763d !default;
 $brand-info:            #31708f !default;
 $brand-warning:         #8a6d3b !default;

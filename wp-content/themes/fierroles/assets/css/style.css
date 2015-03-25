@@ -588,11 +588,11 @@ mark,
 }
 
 .text-primary {
-  color: #428bca;
+  color: #F0F0F0;
 }
 
 a.text-primary:hover {
-  color: #3071a9;
+  color: #d6d6d6;
 }
 
 .text-success {
@@ -632,11 +632,11 @@ a.text-danger:hover {
 }
 
 .bg-primary {
-  background-color: #428bca;
+  background-color: #F0F0F0;
 }
 
 a.bg-primary:hover {
-  background-color: #3071a9;
+  background-color: #d6d6d6;
 }
 
 .bg-success {
@@ -2358,23 +2358,23 @@ select[multiple].input-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #F0F0F0;
+  border-color: #e3e3e3;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #d6d6d6;
+  border-color: #c5c5c5;
 }
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   background-image: none;
 }
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #F0F0F0;
+  border-color: #e3e3e3;
 }
 .btn-primary .badge {
-  color: #428bca;
+  color: #F0F0F0;
   background-color: #fff;
 }
 
@@ -4352,8 +4352,8 @@ a.not-underline:hover {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .text-gradient {
-    background: -webkit-linear-gradient(left, #428bca, #31708f, #3c763d) repeat;
-    background: linear-gradient(to right, #428bca, #31708f, #3c763d) repeat;
+    background: -webkit-linear-gradient(left, #F0F0F0, #31708f, #3c763d) repeat;
+    background: linear-gradient(to right, #F0F0F0, #31708f, #3c763d) repeat;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -4943,17 +4943,17 @@ button.btn.btn-primary.btn-outline,
 input[type="submit"].btn.btn-primary.btn-outline,
 .btn.btn-primary.btn-outline {
   background: none;
-  border: 2px solid #428bca;
+  border: 2px solid #F0F0F0;
   border-radius: 0px;
-  color: #428bca;
+  color: #F0F0F0;
 }
 a.btn.btn-primary.btn-outline:hover,
 button.btn.btn-primary.btn-outline:hover,
 input[type="submit"].btn.btn-primary.btn-outline:hover,
 .btn.btn-primary.btn-outline:hover {
   background: none;
-  border: 2px solid #275c8a;
-  color: #275c8a;
+  border: 2px solid #c2c2c2;
+  color: #c2c2c2;
 }
 a.btn.btn-success.btn-outline,
 button.btn.btn-success.btn-outline,
@@ -5215,9 +5215,9 @@ button.btn.btn-primary.btn-icon-outline,
 input[type="submit"].btn.btn-primary.btn-icon-outline,
 .btn.btn-primary.btn-icon-outline {
   background: none;
-  border: 2px solid #428bca;
+  border: 2px solid #F0F0F0;
   border-radius: 0px;
-  color: #428bca;
+  color: #F0F0F0;
   padding: 0;
 }
 a.btn.btn-primary.btn-icon-outline:before, a.btn.btn-primary.btn-icon-outline:after,
@@ -5292,7 +5292,7 @@ input[type="submit"].btn.btn-primary.btn-icon-outline i,
 .btn.btn-primary.btn-icon-outline i {
   width: 36px;
   float: right;
-  border-left: 2px solid #428bca;
+  border-left: 2px solid #F0F0F0;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -5301,14 +5301,14 @@ button.btn.btn-primary.btn-icon-outline:hover,
 input[type="submit"].btn.btn-primary.btn-icon-outline:hover,
 .btn.btn-primary.btn-icon-outline:hover {
   background: none;
-  border: 2px solid #275c8a;
-  color: #275c8a;
+  border: 2px solid #c2c2c2;
+  color: #c2c2c2;
 }
 a.btn.btn-primary.btn-icon-outline:hover i,
 button.btn.btn-primary.btn-icon-outline:hover i,
 input[type="submit"].btn.btn-primary.btn-icon-outline:hover i,
 .btn.btn-primary.btn-icon-outline:hover i {
-  border-left: 2px solid #275c8a;
+  border-left: 2px solid #c2c2c2;
 }
 a.btn.btn-primary.btn-icon-outline.btn-icon-left span,
 button.btn.btn-primary.btn-icon-outline.btn-icon-left span,
@@ -5322,7 +5322,7 @@ input[type="submit"].btn.btn-primary.btn-icon-outline.btn-icon-left i,
 .btn.btn-primary.btn-icon-outline.btn-icon-left i {
   float: left;
   border-left: none;
-  border-right: 2px solid #428bca;
+  border-right: 2px solid #F0F0F0;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 0;
@@ -5332,7 +5332,7 @@ a.btn.btn-primary.btn-icon-outline.btn-icon-left:hover i,
 button.btn.btn-primary.btn-icon-outline.btn-icon-left:hover i,
 input[type="submit"].btn.btn-primary.btn-icon-outline.btn-icon-left:hover i,
 .btn.btn-primary.btn-icon-outline.btn-icon-left:hover i {
-  border-right: 2px solid #275c8a;
+  border-right: 2px solid #c2c2c2;
 }
 a.btn.btn-primary.btn-icon-outline.btn-xs span,
 a.btn.btn-primary.btn-icon-outline.btn-xs i,
