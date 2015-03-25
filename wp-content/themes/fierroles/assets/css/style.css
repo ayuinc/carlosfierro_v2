@@ -4759,7 +4759,7 @@ body::-webkit-scrollbar {
 .gallery .gallery-cell {
   width: 95%;
   overflow: hidden;
-  height: 560px;
+  height: 420px;
 }
 .gallery .gallery-cell img {
   width: 100%;
