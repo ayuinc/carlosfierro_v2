@@ -26,9 +26,9 @@
               <?php endif; ?>
             </div>
             <div class="overlay">              
-              <h2 class="project-title interstate-black"><?php the_field('tag'); ?></h2>
+              <!-- <h2 class="project-title interstate-black"><?php the_field('tag'); ?></h2>
               <div class="name-year"><span class="name"><?php the_title(); ?></span><br><span class="year"><?php the_field('year'); ?></span></div>
-              <small class="location"><?php the_field('location'); ?></small>
+              <small class="location"><?php the_field('location'); ?></small> -->
             </div>
           </a>
         </li>

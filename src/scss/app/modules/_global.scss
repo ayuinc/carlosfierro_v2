@@ -183,7 +183,7 @@ $brand-systems: #3db9ea;
       @include box-shadow(inset 0px 0px 7px 0px white);
       &.active,
       &:hover {
-      	@include box-shadow(inset 0px 0px 12px 0px white);
+      	@include box-shadow(inset 0px 0px 21px 0px white);
       }
      }
     .nav-project-items-mini-grid li.spaces a {
