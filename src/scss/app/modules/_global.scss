@@ -305,7 +305,7 @@ $gallery-container-height: 420px;
 	color: white;
 }
 .project-name-year {
-	@include position(absolute, -49px null null 0);
+	@include position(absolute, -49px null null -210px);
 	width: 210px;
 	padding-right: $container-fluid * 2;
 	font-size: 11px;

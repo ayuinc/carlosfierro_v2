@@ -4714,7 +4714,7 @@ body::-webkit-scrollbar {
 .project-name-year {
   position: absolute;
   top: -49px;
-  left: 0;
+  left: -210px;
   width: 210px;
   padding-right: 28px;
   font-size: 11px;
