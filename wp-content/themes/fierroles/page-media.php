@@ -18,7 +18,7 @@
   <main class="main-content media-padding" role="main">
     <ul class="projects-grid isotope-container">
       <?php if ( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-        <li class="isotope-item">
+        <li class="isotope-item media-item">
           <a href="<?php the_permalink(); ?>">
             <div class="project-thumbnail">
               <?php if( get_field('image') ): ?>

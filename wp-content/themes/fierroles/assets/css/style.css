@@ -4601,6 +4601,9 @@ body::-webkit-scrollbar {
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
 }
+.projects-grid .isotope-item.media-item > a {
+  height: 210px;
+}
 .projects-grid .isotope-item > a {
   display: block;
   position: relative;
@@ -4707,7 +4710,7 @@ body::-webkit-scrollbar {
 .project-details-trigger {
   width: 28px;
   height: 28px;
-  background-color: rgba(49, 50, 51, 0.9);
+  background-color: rgba(49, 50, 51, 0.7);
   color: white;
 }
 

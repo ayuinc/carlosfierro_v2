@@ -213,6 +213,11 @@ $brand-systems: #3db9ea;
 				opacity: 1;
 			}
 		}
+		&.media-item {
+			> a {
+				height: 210px;
+			}
+		}
 		> a {
 			display: block;
 			position: relative;
