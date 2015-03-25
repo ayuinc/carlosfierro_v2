@@ -80,13 +80,13 @@ $sidebar-left-width-control: 280px;
 	padding-top: 42px !important;
 }
 .bio-padding {
-	padding-top: 61px !important;
+	padding-top: 58px !important;
 }
 .media-padding {
-	padding-top: 80px !important;
+	padding-top: 77px !important;
 }
 .contact-padding {
-	padding-top: 99px !important;
+	padding-top: 96px !important;
 }
 
 /*
@@ -275,7 +275,7 @@ $brand-systems: #3db9ea;
 	position: relative;
 	overflow: hidden; 
 	margin-bottom: 21px;
-	height: 560px;
+	height: 420px;
 	&.display-project-details {
 		.project-details {
 			@include transition(all 0.2s ease-in-out);
@@ -304,7 +304,7 @@ $brand-systems: #3db9ea;
 	color: white;
 }
 .project-name-year {
-	@include position(absolute, -49px null null -56px);
+	@include position(absolute, -49px null null -14%);
 	font-size: 11px;
 	text-align: right;
 }

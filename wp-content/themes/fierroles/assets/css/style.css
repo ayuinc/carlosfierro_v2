@@ -4442,15 +4442,15 @@ body::-webkit-scrollbar {
 }
 
 .bio-padding {
-  padding-top: 61px !important;
+  padding-top: 58px !important;
 }
 
 .media-padding {
-  padding-top: 80px !important;
+  padding-top: 77px !important;
 }
 
 .contact-padding {
-  padding-top: 99px !important;
+  padding-top: 96px !important;
 }
 
 /*
@@ -4679,7 +4679,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   margin-bottom: 21px;
-  height: 560px;
+  height: 420px;
 }
 .gallery-container.display-project-details .project-details {
   -webkit-transition: all 0.2s ease-in-out;
@@ -4714,7 +4714,7 @@ body::-webkit-scrollbar {
 .project-name-year {
   position: absolute;
   top: -49px;
-  left: -56px;
+  left: -14%;
   font-size: 11px;
   text-align: right;
 }
