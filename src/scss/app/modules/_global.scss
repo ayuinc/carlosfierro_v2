@@ -180,9 +180,12 @@ $brand-systems: #3db9ea;
       height: 21px;
       background-color: $brand-spaces;
       margin: 0;
-      -webkit-box-shadow: inset 0px 0px 7px 0px white;
-      -moz-box-shadow: inset 0px 0px 7px 0px white;
-      box-shadow: inset 0px 0px 7px 0px white; }
+      @include box-shadow(inset 0px 0px 7px 0px white);
+      &.active,
+      &:hover {
+      	@include box-shadow(inset 0px 0px 12px 0px white);
+      }
+     }
     .nav-project-items-mini-grid li.spaces a {
       background-color: $brand-spaces; }
       .nav-project-items-mini-grid li.spaces a:hover, .nav-project-items-mini-grid li.spaces a.active {

@@ -4545,6 +4545,11 @@ body::-webkit-scrollbar {
   -moz-box-shadow: inset 0px 0px 7px 0px white;
   box-shadow: inset 0px 0px 7px 0px white;
 }
+.nav-project-items-mini-grid li a.active, .nav-project-items-mini-grid li a:hover {
+  -webkit-box-shadow: inset 0px 0px 12px 0px white;
+  -moz-box-shadow: inset 0px 0px 12px 0px white;
+  box-shadow: inset 0px 0px 12px 0px white;
+}
 
 .nav-project-items-mini-grid li.spaces a {
   background-color: #d4de3e;
