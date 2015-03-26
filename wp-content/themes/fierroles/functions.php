@@ -3,6 +3,8 @@
 	add_theme_support( 'menus' );
 	add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'full-width-thumbnail', 210, 9999, false );
+	function custom_in_post_images( $args ) { $custom_images = array('full-width-thumbnail' => 'Full Width Ratio'); return array_merge( $args, $custom_images ); } add_filter( 'image_size_names_choose', 'custom_in_post_images' );
 
 	function register_theme_menus(){
 		register_nav_menus(
