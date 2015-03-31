@@ -14,9 +14,9 @@
     <?php if (is_page_template( 'page-works.php' )):  ?>
       <ul class="nav-project-grid-filters mv-42">
         <li><a href="#" class="* all active" data-filter="*">All</a></li>
-        <li><a href="#" class="spaces" data-filter=".spaces">Spaces</a></li>
-        <li><a href="#" class="objects" data-filter=".objects">Objects</a></li>
-        <li><a href="#" class="systems" data-filter=".systems">Systems</a></li>
+        <li><a href="#" class="spaces espacios" data-filter=".spaces .espacios"><?php _e('Spaces', 'wpml_theme'); ?></a></li>
+        <li><a href="#" class="objects objetos" data-filter=".objects .objetos"><?php _e('Objects', 'wpml_theme'); ?></a></li>
+        <li><a href="#" class="systems sistemas" data-filter=".systems .sistemas"><?php _e('Systems', 'wpml_theme'); ?></a></li>
       </ul>
       <ul class="nav-project-items-mini-grid"></ul>
     <?php endif; ?>
