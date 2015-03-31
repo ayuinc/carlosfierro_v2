@@ -13,10 +13,10 @@
     ?>
     <?php if (is_page_template( 'page-works.php' )):  ?>
       <ul class="nav-project-grid-filters mv-42">
-        <li><a href="#" class="* all active" data-filter="*">All</a></li>
-        <li><a href="#" class="spaces espacios" data-filter=".spaces .espacios"><?php _e('Spaces', 'wpml_theme'); ?></a></li>
-        <li><a href="#" class="objects objetos" data-filter=".objects .objetos"><?php _e('Objects', 'wpml_theme'); ?></a></li>
-        <li><a href="#" class="systems sistemas" data-filter=".systems .sistemas"><?php _e('Systems', 'wpml_theme'); ?></a></li>
+        <li><a href="#" class="* all active" data-filter="*"><?php _e('All', 'wpml_theme'); ?></a></li>
+        <li><a href="#" class="spaces espacios" data-filter=".<?php _e('spaces', 'wpml_theme'); ?>"><?php _e('Spaces', 'wpml_theme'); ?></a></li>
+        <li><a href="#" class="objects objetos" data-filter=".<?php _e('objects', 'wpml_theme'); ?>"><?php _e('Objects', 'wpml_theme'); ?></a></li>
+        <li><a href="#" class="systems sistemas" data-filter=".<?php _e('systems', 'wpml_theme'); ?>"><?php _e('Systems', 'wpml_theme'); ?></a></li>
       </ul>
       <ul class="nav-project-items-mini-grid"></ul>
     <?php endif; ?>
