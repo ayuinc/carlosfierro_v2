@@ -4442,6 +4442,13 @@ body::-webkit-scrollbar {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  [id*="menu-main"] li {
+    display: inline-block;
+    float: none;
+  }
+}
+
 .works-padding {
   padding-top: 42px !important;
 }

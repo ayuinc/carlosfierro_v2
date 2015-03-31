@@ -6,7 +6,7 @@
       $defaults = array(
         'container' => false,
         'theme_location' => 'main-menu',
-        'menu_class' => 'list-unstyled uppercase lintel-regular pv-7'
+        'menu_class' => 'list-unstyled uppercase lintel-regular pv-7 pv-14-xs'
         );
       wp_nav_menu ($defaults);
 

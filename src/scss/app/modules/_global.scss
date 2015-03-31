@@ -81,6 +81,15 @@ $sidebar-left-width-control: 280px;
 	}
 }
 
+[id*="menu-main"] {
+	@media #{$sm-down} {
+		li {
+			display: inline-block;
+			float: none;
+		}
+	}
+} 
+
 .works-padding {
 	padding-top: 42px !important;
 }
