@@ -4425,16 +4425,21 @@ body::-webkit-scrollbar {
 }
 .site-content .sidebar-left,
 .site-content .main-content {
-  float: left;
-  min-height: 100vh;
   padding: 14px;
 }
-.site-content .sidebar-left {
-  width: 280px;
-}
-.site-content .main-content {
-  width: -webkit-calc(100% - 560px);
-  width: calc(100% - 560px);
+@media only screen and (min-width: 768px) {
+  .site-content .sidebar-left,
+  .site-content .main-content {
+    float: left;
+    min-height: 100vh;
+  }
+  .site-content .sidebar-left {
+    width: 280px;
+  }
+  .site-content .main-content {
+    width: -webkit-calc(100% - 560px);
+    width: calc(100% - 560px);
+  }
 }
 
 .works-padding {
@@ -4460,6 +4465,11 @@ body::-webkit-scrollbar {
   padding-left: 0;
   list-style: none;
   margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .nav-project-grid-filters li {
+    display: inline-block;
+  }
 }
 .nav-project-grid-filters li a {
   display: block;
@@ -4599,6 +4609,11 @@ body::-webkit-scrollbar {
   width: 24.95%;
   padding: 3px;
   float: left;
+}
+@media only screen and (max-width: 768px) {
+  .projects-grid .isotope-item {
+    width: 100%;
+  }
 }
 .projects-grid .isotope-item.highlighted .overlay {
   -webkit-transition: opacity 0.2s ease-in-out;

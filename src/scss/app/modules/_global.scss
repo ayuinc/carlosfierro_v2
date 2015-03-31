@@ -64,15 +64,20 @@ $sidebar-left-width-control: 280px;
 	@include clearfix;
 	.sidebar-left,
 	.main-content {
-		float: left;
-		min-height: 100vh;
 		padding: $container-fluid;
 	}
-	.sidebar-left {
-		width: $sidebar-left-width-control;
-	}
-	.main-content {
-		@include calc(width, "100% - #{$sidebar-left-width-control * 2}");
+	@media #{$sm-up} {
+		.sidebar-left,
+		.main-content {
+			float: left;
+			min-height: 100vh;
+		}
+		.sidebar-left {
+			width: $sidebar-left-width-control;
+		}
+		.main-content {
+			@include calc(width, "100% - #{$sidebar-left-width-control * 2}");
+		}
 	}
 }
 
@@ -99,6 +104,9 @@ $brand-systems: #3db9ea;
 .nav-project-grid-filters {
 	@include list-unstyled;
 	li {
+		@media #{$sm-down} {
+			display: inline-block;
+		}
 		a {
 			display: block;
 			font-size: 12px;
@@ -210,6 +218,9 @@ $brand-systems: #3db9ea;
 		width: 24.95%;
 		padding: 3px;
 		float: left;
+		@media #{$sm-down} {
+			width: 100%;
+		}
 		&.highlighted {
 			.overlay {
 				@include transition(opacity 0.2s ease-in-out);
