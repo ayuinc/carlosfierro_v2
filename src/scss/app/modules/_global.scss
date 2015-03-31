@@ -234,17 +234,20 @@ $brand-systems: #3db9ea;
 				}
 			}
 		}
-		&.spaces {
+		&.spaces,
+		&.espacios {
 			.project-title {
 				color: $brand-spaces;
 			}
 		}
-		&.objects {
+		&.objects,
+		&.objetos {
 			.project-title {
 				color: $brand-objects;
 			}
 		}
-		&.systems {
+		&.systems,
+		&.sistemas {
 			.project-title {
 				color: $brand-systems;
 			}

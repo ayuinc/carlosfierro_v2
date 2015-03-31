@@ -4621,13 +4621,13 @@ body::-webkit-scrollbar {
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
 }
-.projects-grid .isotope-item.spaces .project-title {
+.projects-grid .isotope-item.spaces .project-title, .projects-grid .isotope-item.espacios .project-title {
   color: #d4de3e;
 }
-.projects-grid .isotope-item.objects .project-title {
+.projects-grid .isotope-item.objects .project-title, .projects-grid .isotope-item.objetos .project-title {
   color: #fcb748;
 }
-.projects-grid .isotope-item.systems .project-title {
+.projects-grid .isotope-item.systems .project-title, .projects-grid .isotope-item.sistemas .project-title {
   color: #3db9ea;
 }
 .projects-grid img {
