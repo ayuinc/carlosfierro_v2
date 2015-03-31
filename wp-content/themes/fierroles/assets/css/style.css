@@ -4490,6 +4490,9 @@ body::-webkit-scrollbar {
   height: 7px;
   margin-left: 7px;
 }
+.nav-project-grid-filters li a:before {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   .nav-project-grid-filters li a:after {
     display: none;
