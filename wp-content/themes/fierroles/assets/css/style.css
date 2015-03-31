@@ -4482,7 +4482,7 @@ body::-webkit-scrollbar {
   display: block;
   font-size: 12px;
 }
-.nav-project-grid-filters li a:after {
+.nav-project-grid-filters li a:after, .nav-project-grid-filters li a:before {
   content: "";
   display: inline-block;
   opacity: 0;
@@ -4490,22 +4490,38 @@ body::-webkit-scrollbar {
   height: 7px;
   margin-left: 7px;
 }
-.nav-project-grid-filters .all.active:after, .nav-project-grid-filters .all:hover:after,
+@media only screen and (max-width: 768px) {
+  .nav-project-grid-filters li a:after {
+    display: none;
+  }
+  .nav-project-grid-filters li a:before {
+    display: inline-block;
+    margin-right: 7px;
+    margin-left: 0;
+  }
+}
+.nav-project-grid-filters .all.active:after, .nav-project-grid-filters .all.active:before, .nav-project-grid-filters .all:hover:after, .nav-project-grid-filters .all:hover:before,
 .nav-project-grid-filters .spaces.active:after,
+.nav-project-grid-filters .spaces.active:before,
 .nav-project-grid-filters .spaces:hover:after,
+.nav-project-grid-filters .spaces:hover:before,
 .nav-project-grid-filters .objects.active:after,
+.nav-project-grid-filters .objects.active:before,
 .nav-project-grid-filters .objects:hover:after,
+.nav-project-grid-filters .objects:hover:before,
 .nav-project-grid-filters .systems.active:after,
-.nav-project-grid-filters .systems:hover:after {
+.nav-project-grid-filters .systems.active:before,
+.nav-project-grid-filters .systems:hover:after,
+.nav-project-grid-filters .systems:hover:before {
   opacity: 1;
 }
-.nav-project-grid-filters .all:after {
+.nav-project-grid-filters .all:after, .nav-project-grid-filters .all:before {
   background-color: #898b8e;
 }
 .nav-project-grid-filters .spaces {
   color: #d4de3e;
 }
-.nav-project-grid-filters .spaces:after {
+.nav-project-grid-filters .spaces:after, .nav-project-grid-filters .spaces:before {
   background-color: #d4de3e;
 }
 .nav-project-grid-filters .spaces.active, .nav-project-grid-filters .spaces:hover {
@@ -4514,7 +4530,7 @@ body::-webkit-scrollbar {
 .nav-project-grid-filters .objects {
   color: #fcb748;
 }
-.nav-project-grid-filters .objects:after {
+.nav-project-grid-filters .objects:after, .nav-project-grid-filters .objects:before {
   background-color: #fcb748;
 }
 .nav-project-grid-filters .objects.active, .nav-project-grid-filters .objects:hover {
@@ -4523,7 +4539,7 @@ body::-webkit-scrollbar {
 .nav-project-grid-filters .systems {
   color: #3db9ea;
 }
-.nav-project-grid-filters .systems:after {
+.nav-project-grid-filters .systems:after, .nav-project-grid-filters .systems:before {
   background-color: #3db9ea;
 }
 .nav-project-grid-filters .systems.active, .nav-project-grid-filters .systems:hover {

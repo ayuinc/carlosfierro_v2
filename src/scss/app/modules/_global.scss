@@ -119,13 +119,24 @@ $brand-systems: #3db9ea;
 		a {
 			display: block;
 			font-size: 12px;
-			&:after {
+			&:after,
+			&:before {
 				content: "";
 				display: inline-block;
 				opacity: 0;
 				width: 7px;
 				height: 7px;
 				margin-left: 7px;
+			}
+			@media #{$sm-down} {
+				&:after {
+					display: none;
+				}
+				&:before {
+					display: inline-block;
+					margin-right: 7px;
+					margin-left: 0;
+				}
 			}
 		}
 	}
@@ -135,19 +146,22 @@ $brand-systems: #3db9ea;
 	.systems {
 		&.active,
 		&:hover {
-			&:after {
+			&:after,
+			&:before {
 				opacity: 1;
 			}
 		}
 	}
 	.all {
-		&:after {
+		&:after,
+		&:before {
 			background-color: $gray;
 		}
 	}
 	.spaces {
 		color: $brand-spaces;
-		&:after {
+		&:after,
+		&:before {
 			background-color: $brand-spaces;
 		}
 		&.active,
@@ -157,7 +171,8 @@ $brand-systems: #3db9ea;
 	}
 	.objects {
 		color: $brand-objects;
-		&:after {
+		&:after,
+		&:before {
 			background-color: $brand-objects;
 		}
 		&.active,
@@ -167,7 +182,8 @@ $brand-systems: #3db9ea;
 	}
 	.systems {
 		color: $brand-systems;
-		&:after {
+		&:after,
+		&:before {
 			background-color: $brand-systems;
 		}
 		&.active,
