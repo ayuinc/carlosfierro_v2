@@ -76,7 +76,12 @@ $sidebar-left-width-control: 280px;
 			width: $sidebar-left-width-control;
 		}
 		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control * 2}");
+			@include calc(width, "100% - #{$sidebar-left-width-control}");
+		}
+	}
+	@media #{$md-up} {
+		.main-content {
+			@include calc(width, "100% - #{$sidebar-left-width-control * 2}");	
 		}
 	}
 }
