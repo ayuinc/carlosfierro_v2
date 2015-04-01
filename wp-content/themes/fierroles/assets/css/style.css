@@ -4647,6 +4647,11 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 }
+@media only screen and (max-width: 992px) {
+  .projects-grid .isotope-item {
+    width: 33.333333%;
+  }
+}
 .projects-grid .isotope-item.highlighted .overlay {
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;

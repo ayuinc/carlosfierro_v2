@@ -254,6 +254,9 @@ $brand-systems: #3db9ea;
 		@media #{$sm-down} {
 			width: 100%;
 		}
+		@media #{$md-down} {
+			width: 33.333333%;
+		}
 		&.highlighted {
 			.overlay {
 				@include transition(opacity 0.2s ease-in-out);
