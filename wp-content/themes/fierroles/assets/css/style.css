@@ -4825,6 +4825,11 @@ body::-webkit-scrollbar {
   overflow: hidden;
   height: 490px;
 }
+@media only screen and (max-width: 768px) {
+  .gallery .gallery-cell {
+    width: 100%;
+  }
+}
 .gallery .gallery-cell img {
   width: 100%;
   height: auto;

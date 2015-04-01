@@ -14,13 +14,13 @@
           <?php endforeach; ?>
         <?php endif; ?>
       </div>
-      <div class="project-details-trigger">
+      <div class="project-details-trigger hidden-xs">
         <button type="button" class="tcon tcon-plus--minusfold" aria-label="add item">
           <span class="tcon-visuallyhidden">add item</span>
         </button>
       </div>
-      <div class="project-details">
-        <p><?php the_content(); ?></p>
+      <div class="project-details hidden-xs">
+        <?php the_content(); ?>
       </div>
     </div>
     <div class="clearfix relative">
@@ -28,7 +28,7 @@
         <span class="name"><?php the_title(); ?></span><br>
         <span class="year"><?php the_field('year'); ?></span>
       </div>
-      <div class="gallery-nav js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "asNavFor": ".gallery", "pageDots": false, "prevNextButtons": false }'>
+      <div class="gallery-nav js-flickity hidden-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "asNavFor": ".gallery", "pageDots": false, "prevNextButtons": false }'>
         <?php 
           $images = get_field('gallery');
           if( $images ): ?>
@@ -39,7 +39,7 @@
           <?php endforeach; ?>
         <?php endif; ?>
       </div>
-      <div class="gallery-counter js-flickity" data-flickity-options='{ "asNavFor": ".gallery", "pageDots": false, "prevNextButtons": false}'>
+      <div class="gallery-counter js-flickity hidden-xs" data-flickity-options='{ "asNavFor": ".gallery", "pageDots": false, "prevNextButtons": false}'>
         <?php 
           $images = get_field('gallery');
           if( $images ): ?>
@@ -48,6 +48,9 @@
           <?php endforeach; ?>
         <?php endif; ?>
       </div>
+    </div>
+    <div class="visible-xs-block pv-21">
+      <?php the_content(); ?>
     </div>
     <?php endwhile; endif; ?>
   </main>

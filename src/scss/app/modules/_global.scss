@@ -407,6 +407,9 @@ $gallery-container-height: 490px;
 		width: 95%;
 		overflow: hidden;
 		height: $gallery-container-height;
+		@media #{$sm-down} {
+			width: 100%;
+		}
 		img {
 			width: 100%;
 			height: auto;
