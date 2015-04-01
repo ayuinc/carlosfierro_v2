@@ -84,6 +84,14 @@ $sidebar-left-width-control: 280px;
 			@include calc(width, "100% - #{$sidebar-left-width-control * 2}");	
 		}
 	}
+	@media #{$sm-down} {
+		.sidebar-left {
+			h1 {
+				font-size: $font-size-h2;
+				font-size: rem($font-size-h2);
+			}
+		}
+	}
 }
 
 [id*="menu-main"] {
@@ -120,6 +128,7 @@ $brand-systems: #3db9ea;
 	li {
 		@media #{$sm-down} {
 			display: inline-block;
+			padding: 0 ($container-fluid / 2);
 		}
 		a {
 			display: block;
@@ -251,11 +260,11 @@ $brand-systems: #3db9ea;
 		width: 24.95%;
 		padding: 3px;
 		float: left;
-		@media #{$sm-down} {
-			width: 100%;
-		}
 		@media #{$md-down} {
 			width: 33.333333%;
+		}
+		@media #{$sm-down} {
+			width: 100%;
 		}
 		&.highlighted {
 			.overlay {
@@ -273,6 +282,9 @@ $brand-systems: #3db9ea;
 			position: relative;
 			height: 140px;
 			overflow: hidden;
+			@media #{$sm-down} {
+				height: 210px;
+			}
 			&.active,
 			&:hover {
 				.overlay {

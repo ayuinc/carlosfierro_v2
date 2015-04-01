@@ -4447,6 +4447,12 @@ body::-webkit-scrollbar {
     width: calc(100% - 560px);
   }
 }
+@media only screen and (max-width: 768px) {
+  .site-content .sidebar-left h1 {
+    font-size: 30px;
+    font-size: 2.14286rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   [id*="menu-main"] li {
@@ -4482,6 +4488,7 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 768px) {
   .nav-project-grid-filters li {
     display: inline-block;
+    padding: 0 7px;
   }
 }
 .nav-project-grid-filters li a {
@@ -4642,14 +4649,14 @@ body::-webkit-scrollbar {
   padding: 3px;
   float: left;
 }
-@media only screen and (max-width: 768px) {
-  .projects-grid .isotope-item {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 992px) {
   .projects-grid .isotope-item {
     width: 33.333333%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects-grid .isotope-item {
+    width: 100%;
   }
 }
 .projects-grid .isotope-item.highlighted .overlay {
@@ -4666,6 +4673,11 @@ body::-webkit-scrollbar {
   position: relative;
   height: 140px;
   overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .projects-grid .isotope-item > a {
+    height: 210px;
+  }
 }
 .projects-grid .isotope-item > a.active .overlay, .projects-grid .isotope-item > a:hover .overlay {
   -webkit-transition: opacity 0.2s ease-in-out;
