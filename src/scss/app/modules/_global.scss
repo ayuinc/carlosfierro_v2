@@ -76,12 +76,12 @@ $sidebar-left-width-control: 280px;
 			width: $sidebar-left-width-control;
 		}
 		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control}");
+			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
 		}
 	}
 	@media #{$md-up} {
 		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control * 2}");	
+			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control * 2}");	
 		}
 	}
 	@media #{$sm-down} {
@@ -119,7 +119,7 @@ $sidebar-left-width-control: 280px;
 /*
 	Nav project grid filters
 */
-$brand-spaces: #d4de3e;
+$brand-spaces: darken(#d4de3e, 7%);
 $brand-objects: #fcb748;
 $brand-systems: #3db9ea;
 

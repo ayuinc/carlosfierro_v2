@@ -4245,6 +4245,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  outline: 0;
+}
+
 a:hover, a:focus, a:active {
   text-decoration: none !important;
 }
@@ -4438,14 +4442,14 @@ body::-webkit-scrollbar {
     width: 280px;
   }
   .site-content .main-content {
-    width: -webkit-calc(100% - 280px);
-    width: calc(100% - 280px);
+    width: -webkit-calc(992px - 280px);
+    width: calc(992px - 280px);
   }
 }
 @media only screen and (min-width: 992px) {
   .site-content .main-content {
-    width: -webkit-calc(100% - 560px);
-    width: calc(100% - 560px);
+    width: -webkit-calc(992px - 560px);
+    width: calc(992px - 560px);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -4536,13 +4540,13 @@ body::-webkit-scrollbar {
   background-color: #898b8e;
 }
 .nav-project-grid-filters .spaces {
-  color: #d4de3e;
+  color: #c9d424;
 }
 .nav-project-grid-filters .spaces:after, .nav-project-grid-filters .spaces:before {
-  background-color: #d4de3e;
+  background-color: #c9d424;
 }
 .nav-project-grid-filters .spaces.active, .nav-project-grid-filters .spaces:hover {
-  color: #c9d424;
+  color: #acb61f;
 }
 .nav-project-grid-filters .objects {
   color: #fcb748;
@@ -4589,7 +4593,7 @@ body::-webkit-scrollbar {
 .nav-project-items-mini-grid li a {
   display: block;
   height: 21px;
-  background-color: #d4de3e;
+  background-color: #c9d424;
   margin: 0;
   -webkit-box-shadow: inset 0px 0px 7px 0px white;
   -moz-box-shadow: inset 0px 0px 7px 0px white;
@@ -4602,11 +4606,11 @@ body::-webkit-scrollbar {
 }
 
 .nav-project-items-mini-grid li.spaces a {
-  background-color: #d4de3e;
+  background-color: #c9d424;
 }
 
 .nav-project-items-mini-grid li.spaces a:hover, .nav-project-items-mini-grid li.spaces a.active {
-  background-color: #d7e04b;
+  background-color: #d0db2d;
 }
 
 .nav-project-items-mini-grid li.objects a {
@@ -4687,7 +4691,7 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 .projects-grid .isotope-item.spaces .project-title, .projects-grid .isotope-item.espacios .project-title {
-  color: #d4de3e;
+  color: #c9d424;
 }
 .projects-grid .isotope-item.objects .project-title, .projects-grid .isotope-item.objetos .project-title {
   color: #fcb748;
