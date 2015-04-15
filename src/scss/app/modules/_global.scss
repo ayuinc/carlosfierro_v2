@@ -69,12 +69,12 @@ $sidebar-left-width-control: 280px;
 	@media #{$xs-only} {}
 	@media #{$sm-up} {
 		.main-content {
-			@include calc(width, "#{$screen-tablet} - #{$sidebar-left-width-control}");
+			@include calc(width, "100% - #{$sidebar-left-width-control}");
 		}
 	}
 	@media #{$md-up} {
 		.main-content {
-			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");	
+			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control - 70}");
 		}
 	}
 	@media #{$sm-up} {
@@ -264,7 +264,7 @@ $brand-systems: #3db9ea;
 		padding: 3px;
 		float: left;
 		@media #{$md-down} {
-			width: 33.333333%;
+			width: 49.97%;
 		}
 		@media #{$sm-down} {
 			width: 100%;

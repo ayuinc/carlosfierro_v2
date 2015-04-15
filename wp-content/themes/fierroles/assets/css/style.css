@@ -4434,14 +4434,14 @@ body::-webkit-scrollbar {
 }
 @media only screen and (min-width: 768px) {
   .site-content .main-content {
-    width: -webkit-calc(768px - 280px);
-    width: calc(768px - 280px);
+    width: -webkit-calc(100% - 280px);
+    width: calc(100% - 280px);
   }
 }
 @media only screen and (min-width: 992px) {
   .site-content .main-content {
-    width: -webkit-calc(992px - 280px);
-    width: calc(992px - 280px);
+    width: -webkit-calc(992px - 210px);
+    width: calc(992px - 210px);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -4658,7 +4658,7 @@ body::-webkit-scrollbar {
 }
 @media only screen and (max-width: 992px) {
   .projects-grid .isotope-item {
-    width: 33.333333%;
+    width: 49.97%;
   }
 }
 @media only screen and (max-width: 768px) {
