@@ -4491,6 +4491,12 @@ body::-webkit-scrollbar {
   padding-left: 0;
   list-style: none;
   margin: 0;
+  margin: 3rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .nav-project-grid-filters {
+    margin: 1.5rem 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav-project-grid-filters li {
@@ -4828,14 +4834,9 @@ body::-webkit-scrollbar {
 }
 
 .gallery .gallery-cell {
-  width: 95%;
+  width: 100%;
   overflow: hidden;
   height: 490px;
-}
-@media only screen and (max-width: 768px) {
-  .gallery .gallery-cell {
-    width: 100%;
-  }
 }
 .gallery .gallery-cell img {
   width: 100%;
@@ -4864,8 +4865,11 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   width: 256px;
-  height: 22px;
+  height: 18px;
   background-color: rgba(49, 50, 51, 0.9);
+}
+.gallery-counter:hover .gallery-cell:before {
+  color: #d2d3d4;
 }
 .gallery-counter .gallery-cell {
   counter-increment: gallery-cell;

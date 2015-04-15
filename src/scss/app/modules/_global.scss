@@ -128,6 +128,10 @@ $brand-systems: #3db9ea;
 
 .nav-project-grid-filters {
 	@include list-unstyled;
+	margin: rem(42px) 0;
+	@media #{$sm-down} {
+		margin: rem(21px) 0;
+	}
 	li {
 		@media #{$sm-down} {
 			display: inline-block;
@@ -407,12 +411,9 @@ $gallery-container-height: 490px;
 }
 .gallery {
 	.gallery-cell {
-		width: 95%;
+		width: 100%;
 		overflow: hidden;
 		height: $gallery-container-height;
-		@media #{$sm-down} {
-			width: 100%;
-		}
 		img {
 			width: 100%;
 			height: auto;
@@ -440,8 +441,15 @@ $gallery-container-height: 490px;
 .gallery-counter {
 	@include position(absolute, null 0 0 null);
 	width: $screen-tablet / 3;
-	height: 22px;
+	height: 18px;
 	background-color: rgba($gray-darker, 0.9);
+	&:hover {
+		.gallery-cell {
+			&:before {
+				color: $gray-light;
+			}
+		}
+	}
 	.gallery-cell {
 		counter-increment: gallery-cell;
 		width: 10%;
