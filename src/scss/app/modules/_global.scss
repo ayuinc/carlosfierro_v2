@@ -67,7 +67,7 @@ $sidebar-left-width-control: 280px;
 		padding: $container-fluid;
 	}
 	@media #{$xs-only} {}
-	@media #{$sm-only} {
+	@media #{$sm-up} {
 		.main-content {
 			@include calc(width, "#{$screen-tablet} - #{$sidebar-left-width-control}");
 		}

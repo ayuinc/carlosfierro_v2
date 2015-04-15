@@ -4246,7 +4246,7 @@ html {
 }
 
 a {
-  outline: 0;
+  outline: 0 !important;
 }
 
 a:hover, a:focus, a:active {
@@ -4432,7 +4432,7 @@ body::-webkit-scrollbar {
 .site-content .main-content {
   padding: 14px;
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .site-content .main-content {
     width: -webkit-calc(768px - 280px);
     width: calc(768px - 280px);
