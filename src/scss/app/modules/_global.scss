@@ -66,6 +66,17 @@ $sidebar-left-width-control: 280px;
 	.main-content {
 		padding: $container-fluid;
 	}
+	@media #{$xs-only} {}
+	@media #{$sm-only} {
+		.main-content {
+			@include calc(width, "#{$screen-tablet} - #{$sidebar-left-width-control}");
+		}
+	}
+	@media #{$md-up} {
+		.main-content {
+			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");	
+		}
+	}
 	@media #{$sm-up} {
 		.sidebar-left,
 		.main-content {
@@ -75,16 +86,8 @@ $sidebar-left-width-control: 280px;
 		.sidebar-left {
 			width: $sidebar-left-width-control;
 		}
-		.main-content {
-			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
-		}
 	}
-	@media #{$md-up} {
-		.main-content {
-			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control * 2}");	
-		}
-	}
-	@media #{$sm-down} {
+	@media #{$sm-down} {		
 		.sidebar-left {
 			h1 {
 				font-size: $font-size-h2;
