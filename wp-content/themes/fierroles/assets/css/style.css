@@ -4863,7 +4863,7 @@ body::-webkit-scrollbar {
 .gallery-counter {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 7px;
   width: 256px;
   height: 18px;
   background-color: rgba(49, 50, 51, 0.9);
@@ -4874,6 +4874,7 @@ body::-webkit-scrollbar {
 .gallery-counter .gallery-cell {
   counter-increment: gallery-cell;
   width: 10%;
+  height: 18px;
 }
 .gallery-counter .gallery-cell:before {
   content: counter(gallery-cell);

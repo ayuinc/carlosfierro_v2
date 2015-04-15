@@ -439,7 +439,7 @@ $gallery-container-height: 490px;
 }
 
 .gallery-counter {
-	@include position(absolute, null 0 0 null);
+	@include position(absolute, null 0 7px null);
 	width: $screen-tablet / 3;
 	height: 18px;
 	background-color: rgba($gray-darker, 0.9);
@@ -453,6 +453,7 @@ $gallery-container-height: 490px;
 	.gallery-cell {
 		counter-increment: gallery-cell;
 		width: 10%;
+		height: 18px;
 		&:before {
 			content: counter(gallery-cell);
 			color: white;
