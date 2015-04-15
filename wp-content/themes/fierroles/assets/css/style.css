@@ -4242,6 +4242,7 @@ h6.lead {
 }
 html {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a:hover, a:focus, a:active {
