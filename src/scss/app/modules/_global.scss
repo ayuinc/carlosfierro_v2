@@ -356,7 +356,7 @@ $brand-systems: #3db9ea;
 
 
 /* Project gallery */
-$gallery-container-height: 490px;
+$gallery-container-height: 420px;
 .gallery-container {
 	position: relative;
 	overflow: hidden; 
@@ -422,9 +422,9 @@ $gallery-container-height: 490px;
 		width: 100%;
 		overflow: hidden;
 		height: $gallery-container-height;
-		@media #{$sm-down} {
-			height: $gallery-container-height - 210;
-		}
+		// @media #{$sm-down} {
+		// 	height: $gallery-container-height - 140;
+		// }
 		img {
 			width: 100%;
 			height: auto;

@@ -4780,7 +4780,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   margin-bottom: 21px;
-  height: 490px;
+  height: 420px;
 }
 .gallery-container.display-project-details .project-details {
   -webkit-transition: all 0.2s ease-in-out;
@@ -4837,7 +4837,7 @@ body::-webkit-scrollbar {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 14px;
   width: 280px;
-  height: 455px;
+  height: 385px;
   font-size: 11px;
   text-align: justify;
 }
@@ -4852,12 +4852,7 @@ body::-webkit-scrollbar {
 .gallery .gallery-cell {
   width: 100%;
   overflow: hidden;
-  height: 490px;
-}
-@media only screen and (max-width: 769px) {
-  .gallery .gallery-cell {
-    height: 280px;
-  }
+  height: 420px;
 }
 .gallery .gallery-cell img {
   width: 100%;
