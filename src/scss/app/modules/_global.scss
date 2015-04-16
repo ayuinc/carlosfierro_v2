@@ -273,7 +273,7 @@ $brand-systems: #3db9ea;
 	@include normalize-text;
 	.isotope-item {
 		width: 24.95%;
-		padding: 3px;
+		padding: 1px 3px;
 		float: left;
 		@media #{$md-down} {
 			width: 49.97%;
@@ -295,10 +295,10 @@ $brand-systems: #3db9ea;
 		> a {
 			display: block;
 			position: relative;
-			height: 140px;
+			height: 98px;
 			overflow: hidden;
 			@media #{$sm-down} {
-				height: 210px;
+				height: 140px;
 			}
 			&.active,
 			&:hover {
@@ -422,6 +422,9 @@ $gallery-container-height: 490px;
 		width: 100%;
 		overflow: hidden;
 		height: $gallery-container-height;
+		@media #{$sm-down} {
+			height: $gallery-container-height - 210;
+		}
 		img {
 			width: 100%;
 			height: auto;

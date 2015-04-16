@@ -31,7 +31,7 @@
               <?php 
                 $image = get_field('image');
                 if( !empty($image) ): ?>
-          <a class="bg-img-block" href="<?php the_permalink(); ?>" style="background-image: url(<?php echo $image['sizes']['thumbnail']; ?>)">
+          <a class="bg-img-block-top" href="<?php the_permalink(); ?>" style="background-image: url(<?php echo $image['sizes']['thumbnail']; ?>)">
               <?php endif; ?>
             <!-- <div class="project-thumbnail">
                   <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>" />

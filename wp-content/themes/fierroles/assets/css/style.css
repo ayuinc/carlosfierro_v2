@@ -2868,48 +2868,56 @@ input[type="button"].btn-block {
 .bg-img-block {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position: center center;
 }
 
 .bg-img-block-center {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position: center center;
 }
 
 .bg-img-block-center-x {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position-x: center;
 }
 
 .bg-img-block-center-y {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position-y: center;
 }
 
 .bg-img-block-bottom {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position-y: bottom;
 }
 
 .bg-img-block-top {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position-y: top;
 }
 
 .bg-img-block-left {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position-x: left;
 }
 
 .bg-img-block-right {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   background-position-x: right;
 }
 
@@ -4404,6 +4412,7 @@ body::-webkit-scrollbar {
   height: 491px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
 }
 .hero-unit.video-bg {
   overflow: hidden;
@@ -4666,7 +4675,7 @@ body::-webkit-scrollbar {
 }
 .projects-grid .isotope-item {
   width: 24.95%;
-  padding: 3px;
+  padding: 1px 3px;
   float: left;
 }
 @media only screen and (max-width: 992px) {
@@ -4691,12 +4700,12 @@ body::-webkit-scrollbar {
 .projects-grid .isotope-item > a {
   display: block;
   position: relative;
-  height: 140px;
+  height: 98px;
   overflow: hidden;
 }
 @media only screen and (max-width: 769px) {
   .projects-grid .isotope-item > a {
-    height: 210px;
+    height: 140px;
   }
 }
 .projects-grid .isotope-item > a.active .overlay, .projects-grid .isotope-item > a:hover .overlay {
@@ -4844,6 +4853,11 @@ body::-webkit-scrollbar {
   width: 100%;
   overflow: hidden;
   height: 490px;
+}
+@media only screen and (max-width: 769px) {
+  .gallery .gallery-cell {
+    height: 280px;
+  }
 }
 .gallery .gallery-cell img {
   width: 100%;
@@ -8403,6 +8417,7 @@ ebm-banner .banner-pic,
 .banner .banner-pic {
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   height: 350px;
   overflow: hidden;
 }

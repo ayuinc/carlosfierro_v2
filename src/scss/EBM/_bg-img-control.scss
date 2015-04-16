@@ -3,6 +3,7 @@
 @mixin bg-img-control {
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-size: 100%;
 }
 @mixin bg-img-control-center {
 	@include bg-img-control;
