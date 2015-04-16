@@ -4393,7 +4393,7 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
   .site-wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -4438,10 +4438,11 @@ body::-webkit-scrollbar {
 .site-content .main-content {
   padding: 14px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .site-content .main-content {
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 992px) {

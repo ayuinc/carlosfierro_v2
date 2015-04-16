@@ -32,7 +32,7 @@ $user-card-width: 70px;
 	position: relative;
 }
 
-@media #{$lg-up} {
+@media only screen and (min-width: 1500px) {
 	.site-wrapper {
 		width: $screen-lg-desktop;
 		margin: 0 auto;
@@ -74,9 +74,10 @@ $sidebar-left-width-control: 280px;
 		padding: $container-fluid;
 	}
 	@media #{$xs-only} {}
-	@media #{$sm-up} {
+	@media #{$sm-only} {
 		.main-content {
 			@include calc(width, "100% - #{$sidebar-left-width-control}");
+			margin: 0 auto;
 		}
 	}
 	@media #{$md-up} {
