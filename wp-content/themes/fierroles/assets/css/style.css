@@ -4705,7 +4705,7 @@ body::-webkit-scrollbar {
 }
 @media only screen and (max-width: 769px) {
   .projects-grid .isotope-item > a {
-    height: 140px;
+    height: 280px;
   }
 }
 .projects-grid .isotope-item > a.active .overlay, .projects-grid .isotope-item > a:hover .overlay {
