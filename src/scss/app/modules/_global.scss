@@ -82,7 +82,7 @@ $sidebar-left-width-control: 280px;
 	}
 	@media #{$md-up} {
 		.main-content {
-			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
+			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
 		}
 	}
 	@media #{$sm-up} {
@@ -295,7 +295,7 @@ $brand-systems: #3db9ea;
 		> a {
 			display: block;
 			position: relative;
-			height: 98px;
+			height: 140px;
 			overflow: hidden;
 			@media #{$sm-down} {
 				height: 280px;
