@@ -82,7 +82,7 @@ $sidebar-left-width-control: 280px;
 	}
 	@media #{$md-up} {
 		.main-content {
-			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control - 70}");
+			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
 		}
 	}
 	@media #{$sm-up} {
@@ -459,6 +459,7 @@ $gallery-container-height: 490px;
 		}
 	}
 	.gallery-cell {
+		@include flex-middle;
 		counter-increment: gallery-cell;
 		width: 10%;
 		height: 18px;
