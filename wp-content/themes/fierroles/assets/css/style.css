@@ -4451,6 +4451,12 @@ body::-webkit-scrollbar {
 }
 @media only screen and (min-width: 992px) {
   .site-content .main-content {
+    width: -webkit-calc(992px - 280px);
+    width: calc(992px - 280px);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .site-content .main-content {
     width: -webkit-calc(1200px - 280px);
     width: calc(1200px - 280px);
   }

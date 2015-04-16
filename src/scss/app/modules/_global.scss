@@ -82,6 +82,11 @@ $sidebar-left-width-control: 280px;
 	}
 	@media #{$md-up} {
 		.main-content {
+			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
+		}
+	}
+	@media #{$lg-up} {
+		.main-content {
 			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
 		}
 	}
