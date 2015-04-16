@@ -4393,6 +4393,12 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+@media only screen and (min-width: 1200px) {
+  .site-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .hero-unit {
   position: relative;
   height: 491px;

@@ -32,6 +32,13 @@ $user-card-width: 70px;
 	position: relative;
 }
 
+@media #{$lg-up} {
+	.site-wrapper {
+		width: $screen-lg-desktop;
+		margin: 0 auto;
+	}
+}
+
 // HERO UNIT
 .hero-unit {
 	position: relative;
