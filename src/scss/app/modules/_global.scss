@@ -34,7 +34,7 @@ $user-card-width: 70px;
 
 @media only screen and (min-width: 1500px) {
 	.site-wrapper {
-		width: $screen-lg-desktop;
+		width: 1500px;
 		margin: 0 auto;
 	}
 }
@@ -67,6 +67,7 @@ $user-card-width: 70px;
 }
 
 $sidebar-left-width-control: 280px;
+$sidebar-left-width-control-tablet: 210px;
 .site-content {
 	@include clearfix;
 	.sidebar-left,
@@ -76,7 +77,7 @@ $sidebar-left-width-control: 280px;
 	@media #{$xs-only} {}
 	@media #{$sm-only} {
 		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control}");
+			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
 			margin: 0 auto;
 		}
 	}
@@ -90,12 +91,24 @@ $sidebar-left-width-control: 280px;
 			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
 		}
 	}
+	@media only screen and (min-width: 1500px) {
+		.main-content {
+			@include calc(width, "100% - #{$sidebar-left-width-control}");
+		}
+	} 
+	@media #{$sm-only} {
+		.sidebar-left {
+			width: $sidebar-left-width-control-tablet;
+		}
+	}
 	@media #{$sm-up} {
 		.sidebar-left,
 		.main-content {
 			float: left;
 			min-height: 100vh;
 		}
+	}
+	@media #{$md-up} {
 		.sidebar-left {
 			width: $sidebar-left-width-control;
 		}
@@ -278,7 +291,7 @@ $brand-systems: #3db9ea;
 	@include normalize-text;
 	.isotope-item {
 		width: 24.95%;
-		padding: 1px 3px;
+		padding: 3px;
 		float: left;
 		@media #{$md-down} {
 			width: 49.97%;
