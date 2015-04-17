@@ -80,6 +80,21 @@ $sidebar-left-width-control-tablet: 210px;
 			margin: 0 auto;
 		}
 	}
+	@media #{$md-only} {
+	}
+	@media #{$md-up} {
+		.sidebar-left,
+		.main-content {
+			float: left;
+			min-height: 100vh;
+		}
+		.main-content {
+			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
+		}
+		.sidebar-left {
+			width: $sidebar-left-width-control-tablet;
+		}
+	}
 	// @media #{$md-up} {
 	// 	.main-content {
 	// 		@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
@@ -89,32 +104,15 @@ $sidebar-left-width-control-tablet: 210px;
 		.main-content {
 			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
 		}
+		.sidebar-left {
+			width: $sidebar-left-width-control;
+		}
 	}
 	@media only screen and (min-width: 1500px) {
 		.main-content {
 			@include calc(width, "100% - #{$sidebar-left-width-control}");
 		}
 	} 
-	@media #{$md-only} {
-		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
-		}
-		.sidebar-left {
-			width: $sidebar-left-width-control-tablet;
-		}
-	}
-	@media #{$lg-up} {
-		.sidebar-left {
-			width: $sidebar-left-width-control;
-		}
-	}
-	@media #{$sm-up} {
-		.sidebar-left,
-		.main-content {
-			float: left;
-			min-height: 100vh;
-		}
-	}
 	@media #{$sm-down} {		
 		.sidebar-left {
 			h1 {
