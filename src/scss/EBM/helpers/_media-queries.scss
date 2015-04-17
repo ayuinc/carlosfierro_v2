@@ -26,8 +26,10 @@ $md-up: "#{$screen} and (min-width: #{$screen-desktop})" !default;
 
 $lg-up: "#{$screen} and (min-width: #{$screen-lg-desktop})" !default;
 
-$sm-only-landscape: "#{$screen} and (min-width: #{$screen-phone}) and (max-width: #{$screen-tablet}) and (orientation: landscape)";
-$sm-only-portrait: "#{$screen} and (min-width: #{$screen-phone}) and (max-width: #{$screen-tablet}) and (orientation: portrait)";
+$sm-only-landscape: "#{$screen} and (min-width: #{$screen-phone}) and (max-width: #{$screen-tablet}) and (orientation: landscape)" !default;
+$sm-only-portrait: "#{$screen} and (min-width: #{$screen-phone}) and (max-width: #{$screen-tablet}) and (orientation: portrait)" !default;
+$md-only-landscape: "#{$screen} and (min-width: #{$screen-tablet}) and (max-width: #{$screen-desktop}) and (orientation: landscape)" !default;
+$md-only-portrait: "#{$screen} and (min-width: #{$screen-tablet}) and (max-width: #{$screen-desktop}) and (orientation: portrait)" !default;
 
 // VARIABLES LIST FOR EBM 
 

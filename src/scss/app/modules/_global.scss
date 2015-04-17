@@ -96,9 +96,14 @@ $sidebar-left-width-control-tablet: 210px;
 			@include calc(width, "100% - #{$sidebar-left-width-control}");
 		}
 	} 
-	@media #{$sm-only-landscape} {
+	@media #{$md-only} {
 		.sidebar-left {
 			width: $sidebar-left-width-control-tablet;
+		}
+	}
+	@media #{$lg-up} {
+		.sidebar-left {
+			width: $sidebar-left-width-control;
 		}
 	}
 	@media #{$sm-up} {
@@ -107,11 +112,6 @@ $sidebar-left-width-control-tablet: 210px;
 			float: left;
 			min-height: 100vh;
 		}
-		.sidebar-left {
-			width: $sidebar-left-width-control;
-		}
-	}
-	@media #{$md-up} {
 	}
 	@media #{$sm-down} {		
 		.sidebar-left {

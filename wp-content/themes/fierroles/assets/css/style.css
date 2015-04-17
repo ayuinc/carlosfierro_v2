@@ -4467,9 +4467,14 @@ body::-webkit-scrollbar {
     width: calc(100% - 280px);
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 769px) and (orientation: landscape) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   .site-content .sidebar-left {
     width: 210px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .site-content .sidebar-left {
+    width: 280px;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -4477,9 +4482,6 @@ body::-webkit-scrollbar {
   .site-content .main-content {
     float: left;
     min-height: 100vh;
-  }
-  .site-content .sidebar-left {
-    width: 280px;
   }
 }
 @media only screen and (max-width: 769px) {
