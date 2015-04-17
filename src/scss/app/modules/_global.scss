@@ -74,18 +74,17 @@ $sidebar-left-width-control-tablet: 210px;
 	.main-content {
 		padding: $container-fluid;
 	}
-	@media #{$xs-only} {}
 	@media #{$sm-only} {
 		.main-content {
 			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
 			margin: 0 auto;
 		}
 	}
-	@media #{$md-up} {
-		.main-content {
-			@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
-		}
-	}
+	// @media #{$md-up} {
+	// 	.main-content {
+	// 		@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
+	// 	}
+	// }
 	@media #{$lg-up} {
 		.main-content {
 			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
@@ -97,6 +96,9 @@ $sidebar-left-width-control-tablet: 210px;
 		}
 	} 
 	@media #{$md-only} {
+		.main-content {
+			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
+		}
 		.sidebar-left {
 			width: $sidebar-left-width-control-tablet;
 		}

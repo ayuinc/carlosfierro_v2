@@ -4449,12 +4449,6 @@ body::-webkit-scrollbar {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 992px) {
-  .site-content .main-content {
-    width: -webkit-calc(992px - 280px);
-    width: calc(992px - 280px);
-  }
-}
 @media only screen and (min-width: 1200px) {
   .site-content .main-content {
     width: -webkit-calc(1200px - 280px);
@@ -4468,6 +4462,10 @@ body::-webkit-scrollbar {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  .site-content .main-content {
+    width: -webkit-calc(100% - 210px);
+    width: calc(100% - 210px);
+  }
   .site-content .sidebar-left {
     width: 210px;
   }
