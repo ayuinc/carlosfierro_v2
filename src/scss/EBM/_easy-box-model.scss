@@ -62,7 +62,7 @@ $importantize: "!important";
     }
     
     @for $k from 1 through length($breakpoints-sufix-list) {
-      @media #{nth($media-control-list, $k)} {
+      @media #{nth($media-only-list, $k)} {
         .#{nth($box-model-abbr, $j)}-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {          
           // For <IE8
           #{nth($box-model-sides, $j)}: ($i*$times) + px #{$importantize};
@@ -101,7 +101,7 @@ $importantize: "!important";
     }
     
     @for $k from 1 through length($breakpoints-sufix-list) {
-      @media #{nth($media-control-list, $k)} {
+      @media #{nth($media-only-list, $k)} {
         .#{nth($box-model-abbr, $j)}-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)}-bf {       
           &:before {
             #{nth($box-model-sides, $j)}: ($i*$times) + px #{$importantize};
@@ -141,7 +141,7 @@ $importantize: "!important";
     }
 
     @for $k from 1 through length($breakpoints-sufix-list) {
-      @media #{nth($media-control-list, $k)} {
+      @media #{nth($media-only-list, $k)} {
         .#{nth($box-model-ch-abbr, $j)}-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
           #{$children-elements} {
             // For <IE8
@@ -181,7 +181,7 @@ $importantize: "!important";
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
-    @media #{nth($media-control-list, $k)} {
+    @media #{nth($media-only-list, $k)} {
       .pv-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
         padding-top: ($i*$times) + px #{$importantize};
         padding-bottom: ($i*$times) + px #{$importantize};
@@ -226,7 +226,7 @@ $importantize: "!important";
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
-    @media #{nth($media-control-list, $k)} {
+    @media #{nth($media-only-list, $k)} {
       .ph-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
         padding-left: ($i*$times) + px #{$importantize};
         padding-right: ($i*$times) + px #{$importantize};
@@ -272,7 +272,7 @@ $importantize: "!important";
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
-    @media #{nth($media-control-list, $k)} {
+    @media #{nth($media-only-list, $k)} {
       .mv-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
         margin-top: ($i*$times) + px #{$importantize};
         margin-bottom: ($i*$times) + px #{$importantize};
@@ -317,7 +317,7 @@ $importantize: "!important";
     }
   }
   @for $k from 1 through length($breakpoints-sufix-list) {
-    @media #{nth($media-control-list, $k)} {
+    @media #{nth($media-only-list, $k)} {
       .mh-#{$i*$times}-#{nth($breakpoints-sufix-list, $k)} {
         margin-left: ($i*$times) + px #{$importantize};
         margin-right: ($i*$times) + px #{$importantize};
