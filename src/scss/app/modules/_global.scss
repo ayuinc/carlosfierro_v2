@@ -96,7 +96,7 @@ $sidebar-left-width-control-tablet: 210px;
 			@include calc(width, "100% - #{$sidebar-left-width-control}");
 		}
 	} 
-	@media #{$sm-only} {
+	@media #{$sm-only-landscape} {
 		.sidebar-left {
 			width: $sidebar-left-width-control-tablet;
 		}
@@ -107,11 +107,11 @@ $sidebar-left-width-control-tablet: 210px;
 			float: left;
 			min-height: 100vh;
 		}
-	}
-	@media #{$md-up} {
 		.sidebar-left {
 			width: $sidebar-left-width-control;
 		}
+	}
+	@media #{$md-up} {
 	}
 	@media #{$sm-down} {		
 		.sidebar-left {
@@ -291,7 +291,7 @@ $brand-systems: #3db9ea;
 	@include normalize-text;
 	.isotope-item {
 		width: 24.95%;
-		padding: 3px;
+		padding: 1px;
 		float: left;
 		@media #{$md-down} {
 			width: 49.97%;

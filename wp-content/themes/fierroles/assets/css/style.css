@@ -4467,7 +4467,7 @@ body::-webkit-scrollbar {
     width: calc(100% - 280px);
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 769px) {
+@media only screen and (min-width: 480px) and (max-width: 769px) and (orientation: landscape) {
   .site-content .sidebar-left {
     width: 210px;
   }
@@ -4478,8 +4478,6 @@ body::-webkit-scrollbar {
     float: left;
     min-height: 100vh;
   }
-}
-@media only screen and (min-width: 992px) {
   .site-content .sidebar-left {
     width: 280px;
   }
@@ -4689,7 +4687,7 @@ body::-webkit-scrollbar {
 }
 .projects-grid .isotope-item {
   width: 24.95%;
-  padding: 3px;
+  padding: 1px;
   float: left;
 }
 @media only screen and (max-width: 992px) {
