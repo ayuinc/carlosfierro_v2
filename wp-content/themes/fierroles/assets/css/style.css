@@ -4487,6 +4487,9 @@ body::-webkit-scrollbar {
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
   }
+  .site-content .projects-grid .isotope-item > a {
+    height: 180px;
+  }
 }
 @media only screen and (max-width: 769px) {
   .site-content .sidebar-left h1 {

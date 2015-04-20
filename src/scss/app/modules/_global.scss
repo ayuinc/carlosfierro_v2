@@ -93,8 +93,6 @@ $sidebar-left-width-control-tablet: 210px;
 			height: $gallery-container-height - 140;
 		}
 	}
-	@media #{$md-only} {
-	}
 	@media #{$md-up} {
 		.sidebar-left,
 		.main-content {
@@ -119,6 +117,13 @@ $sidebar-left-width-control-tablet: 210px;
 	@media only screen and (min-width: 1500px) {
 		.main-content {
 			@include calc(width, "100% - #{$sidebar-left-width-control}");
+		}
+		.projects-grid {
+			.isotope-item {
+				> a {
+					height: 180px;
+				}
+			}
 		}
 	} 
 	@media #{$sm-down} {		
