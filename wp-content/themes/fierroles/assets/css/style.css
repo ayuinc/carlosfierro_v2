@@ -4442,11 +4442,21 @@ body::-webkit-scrollbar {
 .site-content .main-content {
   padding: 14px;
 }
+@media only screen and (max-width: 480px) {
+  .site-content .gallery-container,
+  .site-content .gallery .gallery-cell {
+    height: 210px;
+  }
+}
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .site-content .main-content {
     width: -webkit-calc(100% - 210px);
     width: calc(100% - 210px);
     margin: 0 auto;
+  }
+  .site-content .gallery-container,
+  .site-content .gallery .gallery-cell {
+    height: 280px;
   }
 }
 @media only screen and (min-width: 992px) {

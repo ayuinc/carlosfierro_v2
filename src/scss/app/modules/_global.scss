@@ -25,6 +25,9 @@ $video-bg-height: 491px;
 	// User cards
 $user-card-height: 42px;
 $user-card-width: 70px;
+	
+	// Gallery container
+$gallery-container-height: 420px;
 
 .site-wrapper,
 .site-content {
@@ -74,10 +77,20 @@ $sidebar-left-width-control-tablet: 210px;
 	.main-content {
 		padding: $container-fluid;
 	}
+	@media #{$xs-only} {
+		.gallery-container,
+		.gallery .gallery-cell {
+			height: $gallery-container-height - 210;
+		}
+	}
 	@media #{$sm-only} {
 		.main-content {
 			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
 			margin: 0 auto;
+		}
+		.gallery-container,
+		.gallery .gallery-cell {
+			height: $gallery-container-height - 140;
 		}
 	}
 	@media #{$md-only} {
@@ -95,11 +108,6 @@ $sidebar-left-width-control-tablet: 210px;
 			width: $sidebar-left-width-control-tablet;
 		}
 	}
-	// @media #{$md-up} {
-	// 	.main-content {
-	// 		@include calc(width, "#{$screen-desktop} - #{$sidebar-left-width-control}");
-	// 	}
-	// }
 	@media #{$lg-up} {
 		.main-content {
 			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
@@ -374,7 +382,6 @@ $brand-systems: #3db9ea;
 
 
 /* Project gallery */
-$gallery-container-height: 420px;
 .gallery-container {
 	position: relative;
 	overflow: hidden; 
