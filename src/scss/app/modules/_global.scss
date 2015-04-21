@@ -125,6 +125,10 @@ $sidebar-left-width-control-tablet: 210px;
 				}
 			}
 		}
+		.gallery-container,
+		.gallery .gallery-cell {
+			height: $gallery-container-height + 140;
+		}
 	} 
 	@media #{$sm-down} {		
 		.sidebar-left {
