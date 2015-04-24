@@ -85,7 +85,8 @@ $sidebar-left-width-control-tablet: 210px;
 	}
 	@media #{$sm-only} {
 		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
+			// @include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
+			width: 100%;
 			margin: 0 auto;
 		}
 		.gallery-container,
