@@ -498,7 +498,7 @@ $brand-systems: #3db9ea;
 	@include position(absolute, null 0 7px null);
 	width: $screen-tablet / 3;
 	height: 18px;
-	background-color: rgba($gray-darker, 0.9);
+	background-color: rgba($gray-darker, 0.6);
 	&:hover {
 		.gallery-cell {
 			&:before {
@@ -515,6 +515,11 @@ $brand-systems: #3db9ea;
 			content: counter(gallery-cell);
 			color: white;
 			font-size: 9px;
+		}
+		&.is-selected {
+			&:before {
+				color: $gray;
+			}
 		}
 	}
 }

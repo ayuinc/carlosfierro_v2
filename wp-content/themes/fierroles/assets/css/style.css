@@ -4914,7 +4914,7 @@ body::-webkit-scrollbar {
   bottom: 7px;
   width: 256.33333px;
   height: 18px;
-  background-color: rgba(49, 50, 51, 0.9);
+  background-color: rgba(49, 50, 51, 0.6);
 }
 .gallery-counter:hover .gallery-cell:before {
   color: #d2d3d4;
@@ -4951,6 +4951,9 @@ body::-webkit-scrollbar {
   content: counter(gallery-cell);
   color: white;
   font-size: 9px;
+}
+.gallery-counter .gallery-cell.is-selected:before {
+  color: #898b8e;
 }
 
 /* 
