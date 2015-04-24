@@ -4508,22 +4508,23 @@ body::-webkit-scrollbar {
   }
 }
 
-.works-padding {
-  padding-top: 42px !important;
-}
+@media only screen and (min-width: 992px) {
+  .works-padding {
+    padding-top: 42px !important;
+  }
 
-.bio-padding {
-  padding-top: 58px !important;
-}
+  .bio-padding {
+    padding-top: 58px !important;
+  }
 
-.media-padding {
-  padding-top: 77px !important;
-}
+  .media-padding {
+    padding-top: 77px !important;
+  }
 
-.contact-padding {
-  padding-top: 96px !important;
+  .contact-padding {
+    padding-top: 96px !important;
+  }
 }
-
 /*
 	Nav project grid filters
 */
@@ -4546,14 +4547,14 @@ body::-webkit-scrollbar {
 }
 .nav-project-grid-filters li a {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
 }
 .nav-project-grid-filters li a:after, .nav-project-grid-filters li a:before {
   content: "";
   display: inline-block;
   opacity: 0;
-  width: 7px;
-  height: 7px;
+  width: 11px;
+  height: 11px;
   margin-left: 7px;
 }
 .nav-project-grid-filters li a:before {
@@ -4867,7 +4868,7 @@ body::-webkit-scrollbar {
 }
 
 .flickity-prev-next-button.previous, .flickity-prev-next-button.next {
-  opacity: 0;
+  opacity: 0.3;
 }
 .flickity-prev-next-button[disabled] {
   opacity: 0;
