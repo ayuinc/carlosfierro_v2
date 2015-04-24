@@ -4501,6 +4501,13 @@ body::-webkit-scrollbar {
   }
 }
 
+/*
+	Main menu
+*/
+.current_page_item a {
+  color: #313233;
+}
+
 @media only screen and (max-width: 769px) {
   [id*="menu-main"] li {
     display: inline-block;

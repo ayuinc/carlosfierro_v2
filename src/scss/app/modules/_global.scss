@@ -141,6 +141,14 @@ $sidebar-left-width-control-tablet: 210px;
 	}
 }
 
+/*
+	Main menu
+*/
+.current_page_item {
+	a {
+		color: $gray-darker;
+	}
+}
 [id*="menu-main"] {
 	@media #{$sm-down} {
 		li {
