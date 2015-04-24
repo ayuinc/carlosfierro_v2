@@ -4953,7 +4953,7 @@ body::-webkit-scrollbar {
   font-size: 9px;
 }
 .gallery-counter .gallery-cell.is-selected:before {
-  color: #898b8e;
+  color: #313233;
 }
 
 /* 
