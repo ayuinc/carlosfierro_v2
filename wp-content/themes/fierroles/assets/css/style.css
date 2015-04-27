@@ -3479,28 +3479,28 @@ html {
 
 /* TEXT IN REMS */
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-  font-size: 23px;
-  font-size: 1.64286rem;
+  font-size: 22px;
+  font-size: 1.57143rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-    font-size: 19px;
-    font-size: 1.35714rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     line-height: 1.2;
   }
 }
 
 .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-  font-size: 23px;
-  font-size: 1.64286rem;
+  font-size: 22px;
+  font-size: 1.57143rem;
   line-height: 1.3;
 }
 .lead-ch p.unlead, .lead-ch .p.unlead, .lead-ch span.unlead, .lead-ch em.unlead, .lead-ch strong.unlead, .lead-ch label.unlead, .lead-ch a.unlead, .lead-ch i.unlead, .lead-ch ul.unlead, .lead-ch ol.unlead, .lead-ch li.unlead {
@@ -3509,15 +3509,15 @@ p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul
 }
 @media only screen and (max-width: 480px) {
   .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-    font-size: 19px;
-    font-size: 1.35714rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     line-height: 1.2;
   }
 }
@@ -3526,21 +3526,21 @@ h1 {
   font-size: 2.57143rem;
 }
 h1.lead {
-  font-size: 45px;
-  font-size: 3.21429rem;
+  font-size: 44px;
+  font-size: 3.14286rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h1.lead {
-    font-size: 39px;
-    font-size: 2.78571rem;
+    font-size: 38px;
+    font-size: 2.71429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   h1.lead {
-    font-size: 41px;
-    font-size: 2.92857rem;
+    font-size: 40px;
+    font-size: 2.85714rem;
     line-height: 1.2;
   }
 }
@@ -3549,21 +3549,21 @@ h2 {
   font-size: 2.14286rem;
 }
 h2.lead {
-  font-size: 39px;
-  font-size: 2.78571rem;
+  font-size: 38px;
+  font-size: 2.71429rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h2.lead {
-    font-size: 33px;
-    font-size: 2.35714rem;
+    font-size: 32px;
+    font-size: 2.28571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   h2.lead {
-    font-size: 35px;
-    font-size: 2.5rem;
+    font-size: 34px;
+    font-size: 2.42857rem;
     line-height: 1.2;
   }
 }
@@ -3572,21 +3572,21 @@ h3 {
   font-size: 1.71429rem;
 }
 h3.lead {
-  font-size: 33px;
-  font-size: 2.35714rem;
+  font-size: 32px;
+  font-size: 2.28571rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h3.lead {
-    font-size: 27px;
-    font-size: 1.92857rem;
+    font-size: 26px;
+    font-size: 1.85714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   h3.lead {
-    font-size: 29px;
-    font-size: 2.07143rem;
+    font-size: 28px;
+    font-size: 2rem;
     line-height: 1.2;
   }
 }
@@ -3595,21 +3595,21 @@ h4 {
   font-size: 1.28571rem;
 }
 h4.lead {
-  font-size: 27px;
-  font-size: 1.92857rem;
+  font-size: 26px;
+  font-size: 1.85714rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h4.lead {
-    font-size: 21px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.42857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   h4.lead {
-    font-size: 23px;
-    font-size: 1.64286rem;
+    font-size: 22px;
+    font-size: 1.57143rem;
     line-height: 1.2;
   }
 }
@@ -3618,21 +3618,21 @@ h5 {
   font-size: 1rem;
 }
 h5.lead {
-  font-size: 23px;
-  font-size: 1.64286rem;
+  font-size: 22px;
+  font-size: 1.57143rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h5.lead {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   h5.lead {
-    font-size: 19px;
-    font-size: 1.35714rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     line-height: 1.2;
   }
 }
@@ -3641,21 +3641,21 @@ h6 {
   font-size: 0.85714rem;
 }
 h6.lead {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.42857rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h6.lead {
-    font-size: 15px;
-    font-size: 1.07143rem;
+    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   h6.lead {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.2;
   }
 }
@@ -3664,21 +3664,21 @@ h6.lead {
   font-size: 2.57143rem;
 }
 .h1.lead {
-  font-size: 45px;
-  font-size: 3.21429rem;
+  font-size: 44px;
+  font-size: 3.14286rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h1.lead {
-    font-size: 39px;
-    font-size: 2.78571rem;
+    font-size: 38px;
+    font-size: 2.71429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .h1.lead {
-    font-size: 41px;
-    font-size: 2.92857rem;
+    font-size: 40px;
+    font-size: 2.85714rem;
     line-height: 1.2;
   }
 }
@@ -3687,21 +3687,21 @@ h6.lead {
   font-size: 2.14286rem;
 }
 .h2.lead {
-  font-size: 39px;
-  font-size: 2.78571rem;
+  font-size: 38px;
+  font-size: 2.71429rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h2.lead {
-    font-size: 33px;
-    font-size: 2.35714rem;
+    font-size: 32px;
+    font-size: 2.28571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .h2.lead {
-    font-size: 35px;
-    font-size: 2.5rem;
+    font-size: 34px;
+    font-size: 2.42857rem;
     line-height: 1.2;
   }
 }
@@ -3710,21 +3710,21 @@ h6.lead {
   font-size: 1.71429rem;
 }
 .h3.lead {
-  font-size: 33px;
-  font-size: 2.35714rem;
+  font-size: 32px;
+  font-size: 2.28571rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h3.lead {
-    font-size: 27px;
-    font-size: 1.92857rem;
+    font-size: 26px;
+    font-size: 1.85714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .h3.lead {
-    font-size: 29px;
-    font-size: 2.07143rem;
+    font-size: 28px;
+    font-size: 2rem;
     line-height: 1.2;
   }
 }
@@ -3733,21 +3733,21 @@ h6.lead {
   font-size: 1.28571rem;
 }
 .h4.lead {
-  font-size: 27px;
-  font-size: 1.92857rem;
+  font-size: 26px;
+  font-size: 1.85714rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h4.lead {
-    font-size: 21px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.42857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .h4.lead {
-    font-size: 23px;
-    font-size: 1.64286rem;
+    font-size: 22px;
+    font-size: 1.57143rem;
     line-height: 1.2;
   }
 }
@@ -3756,21 +3756,21 @@ h6.lead {
   font-size: 1rem;
 }
 .h5.lead {
-  font-size: 23px;
-  font-size: 1.64286rem;
+  font-size: 22px;
+  font-size: 1.57143rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h5.lead {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .h5.lead {
-    font-size: 19px;
-    font-size: 1.35714rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     line-height: 1.2;
   }
 }
@@ -3779,28 +3779,28 @@ h6.lead {
   font-size: 0.85714rem;
 }
 .h6.lead {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.42857rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h6.lead {
-    font-size: 15px;
-    font-size: 1.07143rem;
+    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .h6.lead {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.2;
   }
 }
 
 .lead-ch h1 {
-  font-size: 45px;
-  font-size: 3.21429rem;
+  font-size: 44px;
+  font-size: 3.14286rem;
 }
 .lead-ch h1 em, .lead-ch h1 a, .lead-ch h1 span {
   font-size: inherit;
@@ -3811,21 +3811,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h1 {
-    font-size: 39px;
-    font-size: 2.78571rem;
+    font-size: 38px;
+    font-size: 2.71429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch h1 {
-    font-size: 41px;
-    font-size: 2.92857rem;
+    font-size: 40px;
+    font-size: 2.85714rem;
     line-height: 1.2;
   }
 }
 .lead-ch h2 {
-  font-size: 39px;
-  font-size: 2.78571rem;
+  font-size: 38px;
+  font-size: 2.71429rem;
 }
 .lead-ch h2 em, .lead-ch h2 a, .lead-ch h2 span {
   font-size: inherit;
@@ -3836,21 +3836,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h2 {
-    font-size: 33px;
-    font-size: 2.35714rem;
+    font-size: 32px;
+    font-size: 2.28571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch h2 {
-    font-size: 35px;
-    font-size: 2.5rem;
+    font-size: 34px;
+    font-size: 2.42857rem;
     line-height: 1.2;
   }
 }
 .lead-ch h3 {
-  font-size: 33px;
-  font-size: 2.35714rem;
+  font-size: 32px;
+  font-size: 2.28571rem;
 }
 .lead-ch h3 em, .lead-ch h3 a, .lead-ch h3 span {
   font-size: inherit;
@@ -3861,21 +3861,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h3 {
-    font-size: 27px;
-    font-size: 1.92857rem;
+    font-size: 26px;
+    font-size: 1.85714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch h3 {
-    font-size: 29px;
-    font-size: 2.07143rem;
+    font-size: 28px;
+    font-size: 2rem;
     line-height: 1.2;
   }
 }
 .lead-ch h4 {
-  font-size: 27px;
-  font-size: 1.92857rem;
+  font-size: 26px;
+  font-size: 1.85714rem;
 }
 .lead-ch h4 em, .lead-ch h4 a, .lead-ch h4 span {
   font-size: inherit;
@@ -3886,21 +3886,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h4 {
-    font-size: 21px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.42857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch h4 {
-    font-size: 23px;
-    font-size: 1.64286rem;
+    font-size: 22px;
+    font-size: 1.57143rem;
     line-height: 1.2;
   }
 }
 .lead-ch h5 {
-  font-size: 23px;
-  font-size: 1.64286rem;
+  font-size: 22px;
+  font-size: 1.57143rem;
 }
 .lead-ch h5 em, .lead-ch h5 a, .lead-ch h5 span {
   font-size: inherit;
@@ -3911,21 +3911,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h5 {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch h5 {
-    font-size: 19px;
-    font-size: 1.35714rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     line-height: 1.2;
   }
 }
 .lead-ch h6 {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.42857rem;
 }
 .lead-ch h6 em, .lead-ch h6 a, .lead-ch h6 span {
   font-size: inherit;
@@ -3936,22 +3936,22 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h6 {
-    font-size: 15px;
-    font-size: 1.07143rem;
+    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch h6 {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.2;
   }
 }
 
 .lead-ch .h1 {
-  font-size: 45px;
-  font-size: 3.21429rem;
+  font-size: 44px;
+  font-size: 3.14286rem;
 }
 .lead-ch .h1 em, .lead-ch .h1 a, .lead-ch .h1 span {
   font-size: inherit;
@@ -3962,21 +3962,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h1 {
-    font-size: 39px;
-    font-size: 2.78571rem;
+    font-size: 38px;
+    font-size: 2.71429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch .h1 {
-    font-size: 41px;
-    font-size: 2.92857rem;
+    font-size: 40px;
+    font-size: 2.85714rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h2 {
-  font-size: 39px;
-  font-size: 2.78571rem;
+  font-size: 38px;
+  font-size: 2.71429rem;
 }
 .lead-ch .h2 em, .lead-ch .h2 a, .lead-ch .h2 span {
   font-size: inherit;
@@ -3987,21 +3987,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h2 {
-    font-size: 33px;
-    font-size: 2.35714rem;
+    font-size: 32px;
+    font-size: 2.28571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch .h2 {
-    font-size: 35px;
-    font-size: 2.5rem;
+    font-size: 34px;
+    font-size: 2.42857rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h3 {
-  font-size: 33px;
-  font-size: 2.35714rem;
+  font-size: 32px;
+  font-size: 2.28571rem;
 }
 .lead-ch .h3 em, .lead-ch .h3 a, .lead-ch .h3 span {
   font-size: inherit;
@@ -4012,21 +4012,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h3 {
-    font-size: 27px;
-    font-size: 1.92857rem;
+    font-size: 26px;
+    font-size: 1.85714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch .h3 {
-    font-size: 29px;
-    font-size: 2.07143rem;
+    font-size: 28px;
+    font-size: 2rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h4 {
-  font-size: 27px;
-  font-size: 1.92857rem;
+  font-size: 26px;
+  font-size: 1.85714rem;
 }
 .lead-ch .h4 em, .lead-ch .h4 a, .lead-ch .h4 span {
   font-size: inherit;
@@ -4037,21 +4037,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h4 {
-    font-size: 21px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.42857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch .h4 {
-    font-size: 23px;
-    font-size: 1.64286rem;
+    font-size: 22px;
+    font-size: 1.57143rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h5 {
-  font-size: 23px;
-  font-size: 1.64286rem;
+  font-size: 22px;
+  font-size: 1.57143rem;
 }
 .lead-ch .h5 em, .lead-ch .h5 a, .lead-ch .h5 span {
   font-size: inherit;
@@ -4062,21 +4062,21 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h5 {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch .h5 {
-    font-size: 19px;
-    font-size: 1.35714rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h6 {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.42857rem;
 }
 .lead-ch .h6 em, .lead-ch .h6 a, .lead-ch .h6 span {
   font-size: inherit;
@@ -4087,15 +4087,15 @@ h6.lead {
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h6 {
-    font-size: 15px;
-    font-size: 1.07143rem;
+    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .lead-ch .h6 {
-    font-size: 17px;
-    font-size: 1.21429rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     line-height: 1.2;
   }
 }
@@ -4805,30 +4805,36 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 480px) {
+  .projects-grid .isotope-item {
+    width: 100%;
+  }
   .projects-grid .isotope-item > a {
-    min-height: 180px;
-    max-height: 280px;
+    min-height: 150px;
+    max-height: 170px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
+  .projects-grid .isotope-item {
+    width: 100%;
+  }
   .projects-grid .isotope-item > a {
     min-height: 280px;
     max-height: 420px;
   }
 }
-@media only screen and (max-width: 769px) {
-  .projects-grid .isotope-item {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .projects-grid .isotope-item {
-    width: 49.97%;
-  }
-}
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .projects-grid .isotope-item {
     width: 33.28%;
+  }
+  .projects-grid > a {
+    min-height: 120px;
+    max-height: 150px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .projects-grid .isotope-item > a {
+    min-height: 160px;
+    max-height: 170px;
   }
 }
 
