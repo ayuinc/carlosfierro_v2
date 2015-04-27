@@ -28,14 +28,11 @@
             class="isotope-item"
           <?php endif; ?>
           >
-              <?php 
-                $image = get_field('image');
-                if( !empty($image) ): ?>
-          <a class="bg-img-block-top" href="<?php the_permalink(); ?>" style="background-image: url(<?php echo $image['sizes']['thumbnail']; ?>)">
-              <?php endif; ?>
-            <!-- <div class="project-thumbnail">
-                  <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>" />
-            </div> -->
+          <?php $image = get_field('image'); ?>
+          <a href="<?php the_permalink(); ?>">
+            <div class="project-thumbnail">
+              <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>" />
+            </div>
             <div class="overlay">              
               <h2 class="project-title interstate-black"><?php the_field('tag'); ?></h2>
               <div class="name-year"><span class="name"><?php the_title(); ?></span><br><span class="year"><?php the_field('year'); ?></span></div>

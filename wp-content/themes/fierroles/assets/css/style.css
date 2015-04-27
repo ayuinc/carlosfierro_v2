@@ -4442,65 +4442,71 @@ body::-webkit-scrollbar {
 .site-content .main-content {
   padding: 14px;
 }
+
 @media only screen and (max-width: 480px) {
-  .site-content .gallery-container,
-  .site-content .gallery .gallery-cell {
+  .gallery-container,
+  .gallery .gallery-cell {
     height: 210px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
-  .site-content .main-content {
+  .main-content {
     width: 100%;
     margin: 0 auto;
   }
-  .site-content .gallery-container,
-  .site-content .gallery .gallery-cell {
+
+  .gallery-container,
+  .gallery .gallery-cell {
     height: 280px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .site-content .sidebar-left,
-  .site-content .main-content {
+  .sidebar-left,
+  .main-content {
     float: left;
     min-height: 100vh;
   }
-  .site-content .main-content {
+
+  .main-content {
     width: -webkit-calc(100% - 210px);
     width: calc(100% - 210px);
   }
-  .site-content .sidebar-left {
+
+  .sidebar-left {
     width: 210px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .site-content .main-content {
+  .main-content {
     width: -webkit-calc(1200px - 280px);
     width: calc(1200px - 280px);
   }
-  .site-content .sidebar-left {
+
+  .sidebar-left {
     width: 280px;
   }
 }
 @media only screen and (min-width: 1500px) {
-  .site-content .main-content {
+  .main-content {
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
   }
-  .site-content .projects-grid .isotope-item > a {
+
+  .projects-grid .isotope-item > a {
     height: 180px;
   }
-  .site-content .gallery-container,
-  .site-content .gallery .gallery-cell {
+
+  .gallery-container,
+  .gallery .gallery-cell {
     height: 560px;
   }
 }
 @media only screen and (max-width: 769px) {
-  .site-content .sidebar-left h1 {
+  .sidebar-left h1 {
     font-size: 30px;
     font-size: 2.14286rem;
   }
 }
-
 /*
 	Main menu
 */
@@ -4555,6 +4561,7 @@ body::-webkit-scrollbar {
 .nav-project-grid-filters li a {
   display: block;
   font-size: 14px;
+  font-size: 1rem;
 }
 .nav-project-grid-filters li a:after, .nav-project-grid-filters li a:before {
   content: "";
@@ -4568,6 +4575,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 @media only screen and (max-width: 769px) {
+  .nav-project-grid-filters li a:after, .nav-project-grid-filters li a:before {
+    width: 9px;
+    height: 9px;
+  }
   .nav-project-grid-filters li a:after {
     display: none;
   }
@@ -4710,16 +4721,6 @@ body::-webkit-scrollbar {
   padding: 1px;
   float: left;
 }
-@media only screen and (max-width: 992px) {
-  .projects-grid .isotope-item {
-    width: 49.97%;
-  }
-}
-@media only screen and (max-width: 769px) {
-  .projects-grid .isotope-item {
-    width: 100%;
-  }
-}
 .projects-grid .isotope-item.highlighted .overlay {
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -4730,15 +4731,11 @@ body::-webkit-scrollbar {
   height: 210px;
 }
 .projects-grid .isotope-item > a {
-  display: block;
   position: relative;
-  height: 140px;
   overflow: hidden;
-}
-@media only screen and (max-width: 769px) {
-  .projects-grid .isotope-item > a {
-    height: 280px;
-  }
+  display: block;
+  min-height: 112px;
+  max-height: 130px;
 }
 .projects-grid .isotope-item > a.active .overlay, .projects-grid .isotope-item > a:hover .overlay {
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -4805,6 +4802,34 @@ body::-webkit-scrollbar {
 }
 .projects-grid .location {
   font-size: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .projects-grid .isotope-item > a {
+    min-height: 180px;
+    max-height: 280px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+  .projects-grid .isotope-item > a {
+    min-height: 280px;
+    max-height: 420px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .projects-grid .isotope-item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .projects-grid .isotope-item {
+    width: 49.97%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .projects-grid .isotope-item {
+    width: 33.28%;
+  }
 }
 
 /* Project gallery */

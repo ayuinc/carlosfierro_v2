@@ -77,66 +77,66 @@ $sidebar-left-width-control-tablet: 210px;
 	.main-content {
 		padding: $container-fluid;
 	}
-	@media #{$xs-only} {
-		.gallery-container,
-		.gallery .gallery-cell {
-			height: $gallery-container-height - 210;
-		}
+}
+@media #{$xs-only} {
+	.gallery-container,
+	.gallery .gallery-cell {
+		height: $gallery-container-height - 210;
 	}
-	@media #{$sm-only} {
-		.main-content {
-			// @include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
-			width: 100%;
-			margin: 0 auto;
-		}
-		.gallery-container,
-		.gallery .gallery-cell {
-			height: $gallery-container-height - 140;
-		}
+}
+@media #{$sm-only} {
+	.main-content {
+		// @include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
+		width: 100%;
+		margin: 0 auto;
 	}
-	@media #{$md-up} {
-		.sidebar-left,
-		.main-content {
-			float: left;
-			min-height: 100vh;
-		}
-		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
-		}
-		.sidebar-left {
-			width: $sidebar-left-width-control-tablet;
-		}
+	.gallery-container,
+	.gallery .gallery-cell {
+		height: $gallery-container-height - 140;
 	}
-	@media #{$lg-up} {
-		.main-content {
-			@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
-		}
-		.sidebar-left {
-			width: $sidebar-left-width-control;
-		}
+}
+@media #{$md-up} {
+	.sidebar-left,
+	.main-content {
+		float: left;
+		min-height: 100vh;
 	}
-	@media only screen and (min-width: 1500px) {
-		.main-content {
-			@include calc(width, "100% - #{$sidebar-left-width-control}");
-		}
-		.projects-grid {
-			.isotope-item {
-				> a {
-					height: 180px;
-				}
+	.main-content {
+		@include calc(width, "100% - #{$sidebar-left-width-control-tablet}");
+	}
+	.sidebar-left {
+		width: $sidebar-left-width-control-tablet;
+	}
+}
+@media #{$lg-up} {
+	.main-content {
+		@include calc(width, "#{$screen-lg-desktop} - #{$sidebar-left-width-control}");
+	}
+	.sidebar-left {
+		width: $sidebar-left-width-control;
+	}
+}
+@media only screen and (min-width: 1500px) {
+	.main-content {
+		@include calc(width, "100% - #{$sidebar-left-width-control}");
+	}
+	.projects-grid {
+		.isotope-item {
+			> a {
+				height: 180px;
 			}
 		}
-		.gallery-container,
-		.gallery .gallery-cell {
-			height: $gallery-container-height + 140;
-		}
-	} 
-	@media #{$sm-down} {		
-		.sidebar-left {
-			h1 {
-				font-size: $font-size-h2;
-				font-size: rem($font-size-h2);
-			}
+	}
+	.gallery-container,
+	.gallery .gallery-cell {
+		height: $gallery-container-height + 140;
+	}
+} 
+@media #{$sm-down} {		
+	.sidebar-left {
+		h1 {
+			font-size: $font-size-h2;
+			font-size: rem($font-size-h2);
 		}
 	}
 }
@@ -194,6 +194,7 @@ $brand-systems: #3db9ea;
 		a {
 			display: block;
 			font-size: $font-size-base;
+			font-size: rem($font-size-base);
 			&:after,
 			&:before {
 				content: "";
@@ -207,6 +208,11 @@ $brand-systems: #3db9ea;
 				display: none;
 			}
 			@media #{$sm-down} {
+				&:after,
+				&:before {
+					width: 9px;
+					height: 9px;
+				}
 				&:after {
 					display: none;
 				}
@@ -321,12 +327,6 @@ $brand-systems: #3db9ea;
 		width: 24.95%;
 		padding: 1px;
 		float: left;
-		@media #{$md-down} {
-			width: 49.97%;
-		}
-		@media #{$sm-down} {
-			width: 100%;
-		}
 		&.highlighted {
 			.overlay {
 				@include transition(opacity 0.2s ease-in-out);
@@ -339,13 +339,11 @@ $brand-systems: #3db9ea;
 			}
 		}
 		> a {
-			display: block;
 			position: relative;
-			height: 140px;
 			overflow: hidden;
-			@media #{$sm-down} {
-				height: 280px;
-			}
+			display: block;
+			min-height: 112px;
+			max-height: 130px;
 			&.active,
 			&:hover {
 				.overlay {
@@ -399,7 +397,40 @@ $brand-systems: #3db9ea;
 		font-size: 10px;
 	}
 }
-
+// Media
+.projects-grid {
+	@media #{$xs-only} {
+		.isotope-item {
+			> a {
+				min-height: 180px;
+				max-height: 280px;
+			}
+		}
+	}
+	@media #{$sm-only} {
+		.isotope-item {
+			> a {
+				min-height: 280px;
+				max-height: 420px;
+			}
+		}
+	}
+	@media #{$sm-down} {
+		.isotope-item {
+			width: 100%;
+		}	
+	}
+	@media #{$md-down} {
+		.isotope-item {
+			width: 49.97%;
+		}
+	}
+	@media #{$md-only} {
+		.isotope-item {
+			width: 33.28%;
+		}
+	}
+}
 
 /* Project gallery */
 .gallery-container {
