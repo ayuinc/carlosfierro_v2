@@ -4843,6 +4843,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   margin-bottom: 21px;
+  margin-bottom: 1.5rem;
   min-height: 420px;
 }
 .gallery-container.display-project-details .project-details {
@@ -4862,6 +4863,18 @@ body::-webkit-scrollbar {
   opacity: 0.3;
 }
 
+@media only screen and (max-width: 480px) {
+  .gallery-container,
+  .gallery .gallery-cell {
+    min-height: 190px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 769px) {
+  .gallery-container,
+  .gallery .gallery-cell {
+    min-height: 260px;
+  }
+}
 .project-details-trigger {
   position: absolute;
   bottom: 0;

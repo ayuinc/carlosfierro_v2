@@ -439,8 +439,9 @@ $brand-systems: #3db9ea;
 /* Project gallery */
 .gallery-container {
 	position: relative;
-	overflow: hidden; 
+	overflow: hidden;
 	margin-bottom: 21px;
+	margin-bottom: rem(21px);
 	min-height: $gallery-container-height;
 	&.display-project-details {
 		.project-details {
@@ -458,6 +459,28 @@ $brand-systems: #3db9ea;
 				opacity: 0.3;
 			}
 		}
+	}
+}
+@media #{$xs-only} {
+	.gallery-container,
+	.gallery .gallery-cell {
+		min-height: $gallery-container-height - 230;
+	}
+}
+@media #{$sm-only} {
+	.gallery-container,
+	.gallery .gallery-cell {
+		min-height: $gallery-container-height - 160;
+	}
+}
+@media #{$md-only} {
+	.gallery-container {
+
+	}
+}
+@media only screen and (min-width: 1500px) {
+	.gallery-container {
+
 	}
 }
 .project-details-trigger {
