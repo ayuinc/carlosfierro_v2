@@ -316,7 +316,7 @@ $brand-systems: #3db9ea;
 	.overlay {
 		@include transition(opacity 0.2s ease-in-out);
 		@include position(absolute, 0 0 0 0);
-		@include flex-middle;
+		@include flex-column-center;
 		padding: $container-fluid;
 		background-color: rgba(white, 0.9);
 		opacity: 0;
@@ -443,7 +443,7 @@ $brand-systems: #3db9ea;
 		}
 	}
 	.gallery-cell {
-		@include flex-middle;
+		@include flex-column-center;
 		counter-increment: gallery-cell;
 		width: 10%;
 		height: 18px;

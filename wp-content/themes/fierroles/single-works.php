@@ -14,7 +14,7 @@
           <?php endforeach; ?>
         <?php endif; ?>
       </div>
-      <div class="project-details-trigger hidden-xs">
+      <div class="project-details-trigger hidden-xs flex-column-center flex-align-center">
         <i class="icon-plus"></i>
       </div>
       <div class="project-details hidden-xs">
