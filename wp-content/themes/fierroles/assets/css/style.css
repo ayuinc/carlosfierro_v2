@@ -4446,7 +4446,15 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 480px) {
   .gallery-container,
   .gallery .gallery-cell {
-    height: 210px;
+    min-height: 190px;
+  }
+
+  .projects-grid .isotope-item {
+    width: 100%;
+  }
+  .projects-grid .isotope-item > a {
+    min-height: 150px;
+    max-height: 170px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
@@ -4457,7 +4465,30 @@ body::-webkit-scrollbar {
 
   .gallery-container,
   .gallery .gallery-cell {
-    height: 280px;
+    min-height: 260px;
+  }
+
+  .projects-grid .isotope-item {
+    width: 100%;
+  }
+  .projects-grid .isotope-item > a {
+    min-height: 280px;
+    max-height: 420px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .sidebar-left h1 {
+    font-size: 30px;
+    font-size: 2.14286rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .projects-grid .isotope-item {
+    width: 33.28%;
+  }
+  .projects-grid .isotope-item > a {
+    min-height: 120px;
+    max-height: 150px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -4493,18 +4524,13 @@ body::-webkit-scrollbar {
   }
 
   .projects-grid .isotope-item > a {
-    height: 180px;
+    min-height: 160px;
+    max-height: 170px;
   }
 
   .gallery-container,
   .gallery .gallery-cell {
     height: 560px;
-  }
-}
-@media only screen and (max-width: 769px) {
-  .sidebar-left h1 {
-    font-size: 30px;
-    font-size: 2.14286rem;
   }
 }
 /*
@@ -4804,40 +4830,6 @@ body::-webkit-scrollbar {
   font-size: 10px;
 }
 
-@media only screen and (max-width: 480px) {
-  .projects-grid .isotope-item {
-    width: 100%;
-  }
-  .projects-grid .isotope-item > a {
-    min-height: 150px;
-    max-height: 170px;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 769px) {
-  .projects-grid .isotope-item {
-    width: 100%;
-  }
-  .projects-grid .isotope-item > a {
-    min-height: 280px;
-    max-height: 420px;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  .projects-grid .isotope-item {
-    width: 33.28%;
-  }
-  .projects-grid > a {
-    min-height: 120px;
-    max-height: 150px;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .projects-grid .isotope-item > a {
-    min-height: 160px;
-    max-height: 170px;
-  }
-}
-
 /* Project gallery */
 .gallery-container {
   position: relative;
@@ -4863,18 +4855,6 @@ body::-webkit-scrollbar {
   opacity: 0.3;
 }
 
-@media only screen and (max-width: 480px) {
-  .gallery-container,
-  .gallery .gallery-cell {
-    min-height: 190px;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 769px) {
-  .gallery-container,
-  .gallery .gallery-cell {
-    min-height: 260px;
-  }
-}
 .project-details-trigger {
   position: absolute;
   bottom: 0;
