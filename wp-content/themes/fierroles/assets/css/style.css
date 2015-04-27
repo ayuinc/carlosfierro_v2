@@ -4843,7 +4843,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   margin-bottom: 21px;
-  height: 420px;
+  min-height: 420px;
 }
 .gallery-container.display-project-details .project-details {
   -webkit-transition: all 0.2s ease-in-out;
@@ -4915,7 +4915,7 @@ body::-webkit-scrollbar {
 .gallery .gallery-cell {
   width: 100%;
   overflow: hidden;
-  height: 420px;
+  min-height: 420px;
 }
 .gallery .gallery-cell img {
   width: 100%;

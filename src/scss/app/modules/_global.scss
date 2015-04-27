@@ -441,7 +441,7 @@ $brand-systems: #3db9ea;
 	position: relative;
 	overflow: hidden; 
 	margin-bottom: 21px;
-	height: $gallery-container-height;
+	min-height: $gallery-container-height;
 	&.display-project-details {
 		.project-details {
 			@include transition(all 0.2s ease-in-out);
@@ -501,7 +501,7 @@ $brand-systems: #3db9ea;
 	.gallery-cell {
 		width: 100%;
 		overflow: hidden;
-		height: $gallery-container-height;
+		min-height: $gallery-container-height;
 		// @media #{$sm-down} {
 		// 	height: $gallery-container-height - 140;
 		// }
