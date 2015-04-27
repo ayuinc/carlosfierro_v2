@@ -15,9 +15,7 @@
         <?php endif; ?>
       </div>
       <div class="project-details-trigger hidden-xs">
-        <button type="button" class="tcon tcon-plus--minusfold" aria-label="add item">
-          <span class="tcon-visuallyhidden">add item</span>
-        </button>
+        <i class="icon-plus"></i>
       </div>
       <div class="project-details hidden-xs">
         <?php the_content(); ?>

@@ -18,11 +18,12 @@ $(document).ready ->
 	# 	)
 	
 	# PROJECT DETAILS
-	$('.project-details-trigger button').click (e)->
+	$('.project-details-trigger').click (e)->
+		$('.project-details-trigger i').toggleClass 'icon-minus'
 		$('.gallery-container').toggleClass 'display-project-details'
 		return
 
 	# TRANSFORM ICONS INITIALIZE
-	transformicons.add('.tcon')
+	# transformicons.add('.tcon')
 
 	return # END ON READY
