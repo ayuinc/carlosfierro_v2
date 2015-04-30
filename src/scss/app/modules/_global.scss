@@ -84,6 +84,7 @@ $sidebar-left-width-control-tablet: 210px;
 */
 .current_page_item {
 	a {
+		@include lintel-bold;
 		color: $gray-darker;
 	}
 }

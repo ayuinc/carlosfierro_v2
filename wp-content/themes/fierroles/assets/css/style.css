@@ -5038,6 +5038,9 @@ body::-webkit-scrollbar {
 	Main menu
 */
 .current_page_item a {
+  font-family: Lintel-bold;
+  font-weight: normal;
+  font-style: normal;
   color: #313233;
 }
 
