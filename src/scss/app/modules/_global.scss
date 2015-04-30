@@ -450,7 +450,8 @@ $brand-systems: #3db9ea;
 		&:before {
 			content: counter(gallery-cell);
 			color: white;
-			font-size: 9px;
+			font-size: 12px;
+			font-size: rem(12px);
 		}
 		&.is-selected {
 			&:before {
