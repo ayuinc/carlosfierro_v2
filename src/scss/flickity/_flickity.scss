@@ -44,8 +44,10 @@
 .flickity-prev-next-button {
   position: absolute;
   top: 63%;
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
+  width: rem(35px);
+  height: rem(35px);
   border: none;
   // border-radius: 50%;
   // background: white;

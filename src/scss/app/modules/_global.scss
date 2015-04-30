@@ -363,6 +363,9 @@ $brand-systems: #3db9ea;
 }
 .project-details-trigger {
 	@include position(absolute, null null 0 0);
+	i {
+		font-weight: bold;
+	}
 }
 .project-details-trigger {
 	width: 28px;
