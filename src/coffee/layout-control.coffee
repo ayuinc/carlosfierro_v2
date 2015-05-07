@@ -30,7 +30,7 @@ $(document).ready ->
 	$projectDetailsScrollDown.click (e)->
 		if $translate <= 100
 			$projectDetailsScroll.css({
-				"webkit-transform": 'translateY(' + ($translate += 25) + '%)'
+				"webkit-transform": 'translateY(-' + ($translate += 25) + '%)'
 				})
 		else
 			$translate = 0
