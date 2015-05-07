@@ -25,24 +25,11 @@ $(document).ready ->
 
 	$projectDetailsScroll = $('.project-details-scroll')
 	$projectDetailsScrollDown = $('.project-details-scroll-down')
-	$projectDetailsScrollUp = $('.project-details-scroll-up')
 	$translate = 0;
 	$projectDetailsScrollDown.click (e)->
 		if $translate < 100
 			$projectDetailsScroll.css({
 				"webkit-transform": 'translateY(-' + ($translate += 25) + '%)'
-				})
-		else
-			$translate = 0
-			$projectDetailsScroll.css({
-				"webkit-transform": 'translateY(0)'
-				})
-		return
-
-	$projectDetailsScrollUp.click (e)->
-		if $translate < 100
-			$projectDetailsScroll.css({
-				"webkit-transform": 'translateY(' + ($translate += 25) + '%)'
 				})
 		else
 			$translate = 0

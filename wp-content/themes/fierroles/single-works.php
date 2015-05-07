@@ -22,7 +22,6 @@
           <?php the_content(); ?>
         </div>
         <div class="project-details-scroll-buttons">
-          <div class="project-details-scroll-up"><i class="icon-chevron-up"></i></div>
           <div class="project-details-scroll-down"><i class="icon-chevron-down"></i></div>
         </div>
       </div>

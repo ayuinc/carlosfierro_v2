@@ -5340,16 +5340,16 @@ body::-webkit-scrollbar {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-.project-details-trigger i {
-  font-weight: bold;
-}
-
-.project-details-trigger {
   width: 28px;
   height: 28px;
   background-color: rgba(49, 50, 51, 0.7);
   color: white;
+}
+.project-details-trigger:hover {
+  cursor: pointer;
+}
+.project-details-trigger i {
+  font-weight: bold;
 }
 
 .project-name-year {
@@ -5380,9 +5380,6 @@ body::-webkit-scrollbar {
   overflow: hidden;
   font-size: 11px;
   width: 280px;
-}
-.project-details:hover {
-  cursor: pointer;
 }
 
 .project-details-scroll {
