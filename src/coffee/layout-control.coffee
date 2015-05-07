@@ -23,6 +23,22 @@ $(document).ready ->
 		$('.gallery-container').toggleClass 'display-project-details'
 		return
 
+	$translate = 0;
+	$('.project-details-scroll-down').click (e)->
+		if $translate <= 100
+			$('.project-details-scroll').css({
+				translateY: ($translate += 25) + '%';
+				})
+		else
+			$translate = 0
+			$('.project-details-scroll').css({
+				translateY: 0
+				})
+		return	
+
+	$('.project-details-scroll-up').click (e)->
+		return
+
 	# TRANSFORM ICONS INITIALIZE
 	# transformicons.add('.tcon')
 
