@@ -371,6 +371,7 @@ $brand-systems: #3db9ea;
 }
 .project-details-scroll {
 	@include position(absolute, 0 0 0 0);
+	@include transition(all 0.2s ease-in-out);
 	padding: $container-fluid;
 	height: 100%;
 	width: 100%;
@@ -382,7 +383,7 @@ $brand-systems: #3db9ea;
 	.project-details-scroll-down {
 		@include flex-column-center;
 		@include flex-align-center;
-		background-color: rgba(white, 0.9);
+		background-color: rgba($gray-darker, 0.9);
 		color: #fff;
 		width: 35px;
 		height: 35px;

@@ -5388,6 +5388,9 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 14px;
   height: 100%;
   width: 100%;
@@ -5433,7 +5436,7 @@ body::-webkit-scrollbar {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(49, 50, 51, 0.9);
   color: #fff;
   width: 35px;
   height: 35px;
