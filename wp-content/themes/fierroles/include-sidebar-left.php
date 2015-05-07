@@ -1,6 +1,6 @@
 <aside class="sidebar-left">
   <div class="text-right text-center-xs text-center-sm">
-    <h1 class="h4 uppercase text-gray-dark lintel-bold m-0"><a href="<?php echo site_url(); ?>">Carlos Fierro</a></h1>
+    <h1 class="h4 uppercase text-gray-darker lintel-regular m-0"><a href="<?php echo site_url(); ?>">Carlos Fierro</a></h1>
     <?php 
 
       $defaults = array(

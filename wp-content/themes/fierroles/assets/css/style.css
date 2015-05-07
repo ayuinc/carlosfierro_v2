@@ -5069,6 +5069,9 @@ body::-webkit-scrollbar {
   display: block;
   font-size: 14px;
   font-size: 1rem;
+  font-family: "Interstate Light";
+  font-weight: normal;
+  font-style: normal;
 }
 .nav-project-grid-filters li a:after, .nav-project-grid-filters li a:before {
   content: "";
@@ -5438,8 +5441,8 @@ body::-webkit-scrollbar {
   -ms-flex-align: center;
   background-color: rgba(49, 50, 51, 0.9);
   color: #fff;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
 }
 .project-details-scroll-buttons .project-details-scroll-up:hover,
 .project-details-scroll-buttons .project-details-scroll-down:hover {

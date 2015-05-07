@@ -111,6 +111,7 @@ $brand-systems: #3db9ea;
 			display: block;
 			font-size: $font-size-base;
 			font-size: rem($font-size-base);
+			@include interstate-light;
 			&:after,
 			&:before {
 				content: "";
@@ -386,8 +387,8 @@ $brand-systems: #3db9ea;
 		@include flex-align-center;
 		background-color: rgba($gray-darker, 0.9);
 		color: #fff;
-		width: 35px;
-		height: 35px;
+		width: 28px;
+		height: 28px;
 		&:hover {
 			cursor: pointer;
 		}
