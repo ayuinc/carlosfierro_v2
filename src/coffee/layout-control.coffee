@@ -23,20 +23,23 @@ $(document).ready ->
 		$('.gallery-container').toggleClass 'display-project-details'
 		return
 
+	$projectDetailsScroll = $('.project-details-scroll')
+	$projectDetailsScrollDown = $('.project-details-scroll-down')
+	$projectDetailsScrollUp = $('.project-details-scroll-up')
 	$translate = 0;
-	$('.project-details-scroll-down').click (e)->
+	$projectDetailsScrollDown.click (e)->
 		if $translate <= 100
-			$('.project-details-scroll').css({
+			$projectDetailsScroll.css({
 				translateY: ($translate += 25) + '%';
 				})
 		else
 			$translate = 0
-			$('.project-details-scroll').css({
+			$projectDetailsScroll.css({
 				translateY: 0
 				})
 		return	
 
-	$('.project-details-scroll-up').click (e)->
+	$projectDetailsScrollUp.click (e)->
 		return
 
 	# TRANSFORM ICONS INITIALIZE

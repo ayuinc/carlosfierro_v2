@@ -382,6 +382,13 @@ $brand-systems: #3db9ea;
 	.project-details-scroll-down {
 		@include flex-column-center;
 		@include flex-align-center;
+		background-color: rgba(white, 0.9);
+		color: #fff;
+		width: 35px;
+		height: 35px;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 .flickity-prev-next-button {

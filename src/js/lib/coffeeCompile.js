@@ -1,25 +1,28 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var $translate;
+    var $projectDetailsScroll, $projectDetailsScrollDown, $projectDetailsScrollUp, $translate;
     $('.project-details-trigger').click(function(e) {
       $('.project-details-trigger i').toggleClass('icon-minus');
       $('.gallery-container').toggleClass('display-project-details');
     });
+    $projectDetailsScroll = $('.project-details-scroll');
+    $projectDetailsScrollDown = $('.project-details-scroll-down');
+    $projectDetailsScrollUp = $('.project-details-scroll-up');
     $translate = 0;
-    $('.project-details-scroll-down').click(function(e) {
+    $projectDetailsScrollDown.click(function(e) {
       if ($translate <= 100) {
-        $('.project-details-scroll').css({
+        $projectDetailsScroll.css({
           translateY: ($translate += 25) + '%'
         });
       } else {
         $translate = 0;
-        $('.project-details-scroll').css({
+        $projectDetailsScroll.css({
           translateY: 0
         });
       }
     });
-    $('.project-details-scroll-up').click(function(e) {});
+    $projectDetailsScrollUp.click(function(e) {});
   });
 
 }).call(this);

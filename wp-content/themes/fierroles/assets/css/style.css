@@ -5433,6 +5433,14 @@ body::-webkit-scrollbar {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  width: 35px;
+  height: 35px;
+}
+.project-details-scroll-buttons .project-details-scroll-up:hover,
+.project-details-scroll-buttons .project-details-scroll-down:hover {
+  cursor: pointer;
 }
 
 .flickity-prev-next-button.previous, .flickity-prev-next-button.next {
