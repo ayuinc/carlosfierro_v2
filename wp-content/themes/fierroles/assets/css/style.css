@@ -5381,6 +5381,9 @@ body::-webkit-scrollbar {
   font-size: 11px;
   width: 280px;
 }
+.project-details:hover {
+  cursor: pointer;
+}
 
 .project-details-scroll {
   position: absolute;

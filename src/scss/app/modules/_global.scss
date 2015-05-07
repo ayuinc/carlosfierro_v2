@@ -368,6 +368,9 @@ $brand-systems: #3db9ea;
 	overflow: hidden;
 	font-size: 11px;
 	width: 280px;
+	&:hover {
+		cursor: pointer;
+	}
 }
 .project-details-scroll {
 	@include position(absolute, 0 0 0 0);
