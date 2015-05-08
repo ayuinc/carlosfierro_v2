@@ -590,8 +590,8 @@ $brand-systems: #3db9ea;
 }
 @media only screen and (min-width: 1500px) {
 	.site-wrapper {
-		width: 1500px;
-		margin: 0 auto;
+		// width: 1500px;
+		// margin: 0 auto;
 	}
 	.main-content {
 		@include calc(width, "100% - #{$sidebar-left-width-control}");
