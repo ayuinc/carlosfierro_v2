@@ -5643,12 +5643,12 @@ body::-webkit-scrollbar {
   }
 
   .main-content {
-    width: -webkit-calc(100% - 210px);
-    width: calc(100% - 210px);
+    width: -webkit-calc(100% - 180px);
+    width: calc(100% - 180px);
   }
 
   .sidebar-left {
-    width: 210px;
+    width: 180px;
   }
 }
 @media only screen and (min-width: 1200px) {
