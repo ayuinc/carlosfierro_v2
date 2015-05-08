@@ -595,6 +595,7 @@ $brand-systems: #3db9ea;
 	}
 	.main-content {
 		@include calc(width, "100% - #{$sidebar-left-width-control}");
+		padding-right: $sidebar-left-width-control;
 	}
 	.projects-grid {
 		.isotope-item {

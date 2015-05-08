@@ -5664,6 +5664,7 @@ body::-webkit-scrollbar {
   .main-content {
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
+    padding-right: 280px;
   }
 
   .projects-grid .isotope-item > a {
