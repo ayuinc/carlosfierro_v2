@@ -297,6 +297,8 @@ $brand-systems: #3db9ea;
 		@include position(absolute, 0 0 0 0);
 		@include flex-column-center;
 		padding: $container-fluid;
+		padding-top: 35px;
+		padding-top: rem(35px);
 		background-color: rgba(white, 0.9);
 		opacity: 0;
 	}

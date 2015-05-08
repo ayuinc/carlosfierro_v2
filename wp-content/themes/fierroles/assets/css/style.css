@@ -5297,6 +5297,8 @@ body::-webkit-scrollbar {
   justify-content: center;
   -ms-flex-pack: center;
   padding: 14px;
+  padding-top: 35px;
+  padding-top: 2.5rem;
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
 }
