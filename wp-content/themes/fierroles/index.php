@@ -3,7 +3,6 @@
   Template Name: Splash
 */
 ?>
-
 <?php get_header(); ?>
   <main class="minhp-90 flex-column-center flex-align-center normalize-text" role="main">
     <h1 class="h3 uppercase text-gray-darker lintel-bold m-0">Carlos Fierro</h1>
