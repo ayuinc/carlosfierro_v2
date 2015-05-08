@@ -5560,6 +5560,10 @@ body::-webkit-scrollbar {
 	Media Queries
 */
 @media only screen and (max-width: 480px) {
+  .gallery-container {
+    margin-bottom: 0 !important;
+  }
+
   .gallery-container,
   .gallery .gallery-cell {
     min-height: 190px;
@@ -5664,9 +5668,12 @@ body::-webkit-scrollbar {
   .main-content {
     width: -webkit-calc(100% - 280px);
     width: calc(100% - 280px);
-    padding-right: 280px;
+    padding-right: 280px !important;
   }
 
+  .projects-grid .isotope-item {
+    width: 24% !important;
+  }
   .projects-grid .isotope-item > a {
     min-height: 160px;
     max-height: 170px;

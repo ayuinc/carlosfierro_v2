@@ -52,7 +52,7 @@
         <?php endif; ?>
       </div>
     </div>
-    <div class="visible-xs-block pv-21">
+    <div class="visible-xs-block pb-21">
       <div class="mb-14">
         <span class="name"><?php the_title(); ?></span><br>
         <span class="year"><?php the_field('year'); ?></span>
