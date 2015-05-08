@@ -5593,6 +5593,17 @@ body::-webkit-scrollbar {
     min-height: 260px;
   }
 
+  .projects-grid {
+    margin-left: -14px;
+    margin-right: -14px;
+  }
+  .projects-grid:before, .projects-grid:after {
+    content: " ";
+    display: table;
+  }
+  .projects-grid:after {
+    clear: both;
+  }
   .projects-grid .isotope-item {
     width: 100%;
   }

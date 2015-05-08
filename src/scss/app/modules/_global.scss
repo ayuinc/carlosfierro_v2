@@ -524,6 +524,7 @@ $brand-systems: #3db9ea;
 		min-height: $gallery-container-height - 160;
 	}
 	.projects-grid {
+		@include make-row();
 		.isotope-item {
 			width: 100%;
 			> a {
