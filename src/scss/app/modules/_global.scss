@@ -614,7 +614,7 @@ $brand-systems: #3db9ea;
 	}
 	.gallery-container,
 	.gallery .gallery-cell {
-		height: $gallery-container-height + 140;
+		min-height: $gallery-container-height + 140;
 	}
 }
 

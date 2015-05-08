@@ -5676,7 +5676,7 @@ body::-webkit-scrollbar {
 
   .gallery-container,
   .gallery .gallery-cell {
-    height: 560px;
+    min-height: 560px;
   }
 }
 a.btn.form-control,
