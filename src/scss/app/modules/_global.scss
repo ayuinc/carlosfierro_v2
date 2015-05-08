@@ -259,8 +259,8 @@ $brand-systems: #3db9ea;
 			position: relative;
 			overflow: hidden;
 			display: block;
-			min-height: 112px;
-			max-height: 130px;
+			// min-height: 112px;
+			// max-height: 130px;
 			&.active,
 			&:hover {
 				.overlay {
@@ -507,8 +507,8 @@ $brand-systems: #3db9ea;
 		.isotope-item {
 			width: 100%;
 			> a {
-				min-height: 150px;
-				max-height: 170px;
+				// min-height: 150px;
+				// max-height: 170px;
 			}
 		}
 	}
@@ -527,8 +527,8 @@ $brand-systems: #3db9ea;
 		.isotope-item {
 			width: 100%;
 			> a {
-				min-height: 280px;
-				max-height: 420px;
+				// min-height: 280px;
+				// max-height: 420px;
 			}
 		}
 	}
@@ -546,8 +546,8 @@ $brand-systems: #3db9ea;
 		.isotope-item {
 			width: 33.28%;
 			> a {
-				min-height: 120px;
-				max-height: 150px;
+				// min-height: 120px;
+				// max-height: 150px;
 			}
 		}
 	}
@@ -604,8 +604,8 @@ $brand-systems: #3db9ea;
 		.isotope-item {
 			width: 24% !important;
 			> a {
-				min-height: 160px;
-				max-height: 170px;
+				// min-height: 160px;
+				// max-height: 170px;
 			}
 		}
 	}

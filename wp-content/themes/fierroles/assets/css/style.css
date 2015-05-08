@@ -5244,8 +5244,6 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   display: block;
-  min-height: 112px;
-  max-height: 130px;
 }
 .projects-grid .isotope-item > a.active .overlay, .projects-grid .isotope-item > a:hover .overlay {
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -5583,10 +5581,6 @@ body::-webkit-scrollbar {
   .projects-grid .isotope-item {
     width: 100%;
   }
-  .projects-grid .isotope-item > a {
-    min-height: 150px;
-    max-height: 170px;
-  }
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
   .main-content {
@@ -5602,10 +5596,6 @@ body::-webkit-scrollbar {
   .projects-grid .isotope-item {
     width: 100%;
   }
-  .projects-grid .isotope-item > a {
-    min-height: 280px;
-    max-height: 420px;
-  }
 }
 @media only screen and (max-width: 769px) {
   .sidebar-left h1 {
@@ -5616,10 +5606,6 @@ body::-webkit-scrollbar {
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .projects-grid .isotope-item {
     width: 33.28%;
-  }
-  .projects-grid .isotope-item > a {
-    min-height: 120px;
-    max-height: 150px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -5673,10 +5659,6 @@ body::-webkit-scrollbar {
 
   .projects-grid .isotope-item {
     width: 24% !important;
-  }
-  .projects-grid .isotope-item > a {
-    min-height: 160px;
-    max-height: 170px;
   }
 
   .gallery-container,
