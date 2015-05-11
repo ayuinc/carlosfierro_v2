@@ -12,18 +12,17 @@
     <!-- POST CATEGORY SLUGS -->
     <style>
 
-      <?php echo get_the_category(); ?>
-      <?php foreach((get_the_category()) as $category) {
-        echo $category;
-        echo $category->slug;
-        if ($category->name == 'spaces') {
-          $spaces = $category->slug;
-        } elseif ($category->name == 'objects') {
-          $objects = $category->slug;
-        } else {
-          $systems = $category->slug;
+      <?php 
+        $categories = get_categories();
+        foreach($categories as $category) {
+          if ($category->name == 'Spaces') {
+            $spaces = $category->slug;
+          } elseif ($category->name == 'Objects') {
+            $objects = $category->slug;
+          } else {
+            $systems = $category->slug;
+          }
         }
-      }
       ?>
       
       /* Nav project grid colors */
