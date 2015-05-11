@@ -12,13 +12,13 @@
     <style>
 
       <?php foreach((get_the_category()) as $category) {
-//         if ($category[0]->name == 'spaces') {
-//           $spaces = $category[0]->slug;
-//         } elseif ($category[0]->name == 'objects') {
-//           $objects = $category[0]->slug;
-//         } else {
-//           $systems = $category[0]->slug;
-//         }
+        if ($category[0]->name == 'spaces') {
+          $spaces = $category[0]->slug;
+        } elseif ($category[0]->name == 'objects') {
+          $objects = $category[0]->slug;
+        } else {
+          $systems = $category[0]->slug;
+        }
       }
       ?>
       /* Nav project grid colors */
