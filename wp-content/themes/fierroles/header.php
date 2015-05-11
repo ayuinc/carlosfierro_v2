@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
 
+    <!-- POST CATEGORY SLUGS -->
     <style>
 
       <?php foreach((get_the_category()) as $category) {
@@ -19,6 +20,7 @@
         } else {
           $systems = $category->slug;
         }
+      }
       ?>
       
       /* Nav project grid colors */
@@ -56,8 +58,6 @@
         color: <?php echo $spaces ?>; }
       .projects-grid li.objects a .overlay h4 {
         color: <?php echo $objects ?>; }
-
-      <?php } ?>
 
     </style>
 
