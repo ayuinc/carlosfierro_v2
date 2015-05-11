@@ -24,46 +24,60 @@
           } else {
             $systems = $category->description;
           }
-        
+      ?>
       
       /* Nav project grid colors */
       .nav-project-grid-filters li a.spaces {
-        color: echo '#' . $spaces . ';'; }
+        color: <?php echo '#' . $spaces . ';'; ?>
+      }
         .nav-project-grid-filters li a.spaces:hover:after, .nav-project-grid-filters li a.spaces.active:after {
-          background: echo '#' . $spaces . ';'; }
+          background: <?php echo '#' . $spaces . ';'; ?>
+        }
       .nav-project-grid-filters li a.objects {
-            color: echo '#' . $objects . ';'; }
-            .nav-project-grid-filters li a.objects:hover:after, .nav-project-grid-filters li a.objects.active:after {
-              background: echo '#' . $objects . ';'; }
+        color: <?php echo '#' . $objects . ';'; ?>
+      }
+        .nav-project-grid-filters li a.objects:hover:after, .nav-project-grid-filters li a.objects.active:after {
+          background: <?php echo '#' . $objects . ';'; ?>
+        }
       .nav-project-grid-filters li a.systems {
-            color: echo '#' . $systems . ';'; }
-            .nav-project-grid-filters li a.systems:hover:after, .nav-project-grid-filters li a.systems.active:after {
-              background: echo '#' . $systems . ';'; }
+        color: <?php echo '#' . $systems . ';'; ?>
+      }
+        .nav-project-grid-filters li a.systems:hover:after, .nav-project-grid-filters li a.systems.active:after {
+          background: <?php echo '#' . $systems . ';'; ?>
+        }
 
       /* Mini grid colors */
       .nav-project-items-mini-grid li.spaces a {
-        background: echo '#' . $spaces . ';'; }
+        background: <?php echo '#' . $spaces . ';'; ?>
+      }
         .nav-project-items-mini-grid li.spaces a:hover, .nav-project-items-mini-grid li.spaces a.active {
-          background: echo '#' . $spaces . ';'; }
+          background: <?php echo '#' . $spaces . ';'; ?>
+        }
       .nav-project-items-mini-grid li.objects a {
-        background: echo '#' . $objects . ';'; }
+        background: <?php echo '#' . $objects . ';'; ?>
+      }
         .nav-project-items-mini-grid li.objects a:hover, .nav-project-items-mini-grid li.objects a.active {
-          background: echo '#' . $objects . ';'; }
+          background: <?php echo '#' . $objects . ';'; ?>
+        }
       .nav-project-items-mini-grid li.systems a {
-        background: echo '#' . $systems . ';'; }
+        background: <?php echo '#' . $systems . ';'; ?>
+      }
         .nav-project-items-mini-grid li.systems a:hover, .nav-project-items-mini-grid li.systems a.active {
-          background: echo '#' . $systems . ';'; }
+          background: <?php echo '#' . $systems . ';'; ?>
+        }
 
       /* Projects grid h4 color */
       .projects-grid li.systems a .overlay h4 {
-        color: echo '#' . $systems . ';'; }
+        color: <?php echo '#' . $systems . ';'; ?>
+      }
       .projects-grid li.spaces a .overlay h4 {
-        color: echo '#' . $spaces . ';'; }
+        color: <?php echo '#' . $spaces . ';'; ?>
+      }
       .projects-grid li.objects a .overlay h4 {
-        color: echo '#' . $objects . ';'; }
+        color: <?php echo '#' . $objects . ';'; ?>
+      }
 
-        }
-      ?>
+      <?php } ?>
 
     </style>
 
