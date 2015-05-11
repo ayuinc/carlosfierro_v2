@@ -13,11 +13,11 @@
 
       <?php foreach((get_the_category()) as $category) {
         if ($category[0]->name == 'spaces') {
-          $spaces = $category[0]->slug
+          $spaces = $category[0]->slug;
         } elseif ($category[0]->name == 'objects') {
-          $objects = $category[0]->slug
+          $objects = $category[0]->slug;
         } else {
-          $systems = $category[0]->slug
+          $systems = $category[0]->slug;
         }
       }
       ?>
