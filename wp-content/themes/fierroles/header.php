@@ -14,7 +14,9 @@
 
       <?php 
         $categories = get_categories();
+        echo $categories;
         foreach($categories as $category) {
+          echo $category;
           if ($category->name == 'Spaces') {
             $spaces = $category->slug;
           } elseif ($category->name == 'Objects') {
