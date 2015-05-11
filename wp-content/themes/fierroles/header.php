@@ -10,22 +10,23 @@
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
 
     <!-- POST CATEGORY SLUGS -->
-    <style>
 
-      <?php 
-        $categories = get_categories();
-        echo $categories;
-        foreach($categories as $category) {
-          echo $category;
-          if ($category->name == 'Spaces') {
-            $spaces = $category->description;
-          } elseif ($category->name == 'Objects') {
-            $objects = $category->description;
-          } else {
-            $systems = $category->description;
-          }
-      ?>
+    <?php 
+      $categories = get_categories();
+      echo $categories;
+      foreach($categories as $category) {
+        echo $category;
+        if ($category->name == 'Spaces') {
+          $spaces = $category->description;
+        } elseif ($category->name == 'Objects') {
+          $objects = $category->description;
+        } else {
+          $systems = $category->description;
+        }
+      }
+    ?>
       
+    <style>
       /* Nav project grid colors */
       .nav-project-grid-filters li a.spaces {
         color: <?php echo '#' . $spaces . ';'; ?>
@@ -77,10 +78,7 @@
         color: <?php echo '#' . $objects . ';'; ?>
       }
 
-      <?php } ?>
-
     </style>
-
     <?php wp_head(); ?> <!-- AVISAMOS QUE TERMINA EL HEAD -->
   </head>
   <body <?php body_class(); ?>>
