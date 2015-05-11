@@ -12,7 +12,10 @@
     <!-- POST CATEGORY SLUGS -->
     <style>
 
+      <?php echo get_the_category(); ?>
       <?php foreach((get_the_category()) as $category) {
+        echo $category;
+        echo $category->slug;
         if ($category->name == 'spaces') {
           $spaces = $category->slug;
         } elseif ($category->name == 'objects') {
