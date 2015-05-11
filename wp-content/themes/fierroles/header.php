@@ -14,7 +14,7 @@
     <?php 
       $categories = get_categories();
       foreach($categories as $category) {
-        echo $category->name;
+        echo $category->cat_ID;
         // if ($category->name == 'Spaces') {
         //   $spaces = $category->description;
         //   echo $spaces;
