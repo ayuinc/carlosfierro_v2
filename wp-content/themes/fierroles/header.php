@@ -14,16 +14,17 @@
     <?php 
       $categories = get_categories();
       foreach($categories as $category) {
-        if ($category->name == 'Spaces') {
-          $spaces = $category->description;
-          echo $spaces;
-        } elseif ($category->name == 'Objects') {
-          $objects = $category->description;
-          echo $objects;
-        } else {
-          $systems = $category->description;
-          echo $systems;
-        }
+        echo $category->name;
+        // if ($category->name == 'Spaces') {
+        //   $spaces = $category->description;
+        //   echo $spaces;
+        // } elseif ($category->name == 'Objects') {
+        //   $objects = $category->description;
+        //   echo $objects;
+        // } else {
+        //   $systems = $category->description;
+        //   echo $systems;
+        // }
       }
     ?>
       
