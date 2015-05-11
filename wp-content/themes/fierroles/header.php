@@ -9,78 +9,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
 
-    <!-- POST CATEGORY SLUGS -->
-
-    <?php 
-      $categories = get_categories();
-      foreach($categories as $category) {
-        echo $category->cat_ID;
-        // if ($category->name == 'Spaces') {
-        //   $spaces = $category->description;
-        //   echo $spaces;
-        // } elseif ($category->name == 'Objects') {
-        //   $objects = $category->description;
-        //   echo $objects;
-        // } else {
-        //   $systems = $category->description;
-        //   echo $systems;
-        // }
-      }
-    ?>
-      
+    <!-- POST CATEGORY COLORS -->
     <style>
       /* Nav project grid colors */
       .nav-project-grid-filters li a.spaces {
-        color: <?php echo '#' . $spaces . ';'; ?>
+        color: #AFB829;
       }
         .nav-project-grid-filters li a.spaces:hover:after, .nav-project-grid-filters li a.spaces.active:after {
-          background: <?php echo '#' . $spaces . ';'; ?>
+          background: #AFB829;
         }
       .nav-project-grid-filters li a.objects {
-        color: <?php echo '#' . $objects . ';'; ?>
+        color: #fcb748;
       }
         .nav-project-grid-filters li a.objects:hover:after, .nav-project-grid-filters li a.objects.active:after {
-          background: <?php echo '#' . $objects . ';'; ?>
+          background: #fcb748;
         }
       .nav-project-grid-filters li a.systems {
-        color: <?php echo '#' . $systems . ';'; ?>
+        color: #3db9ea;
       }
         .nav-project-grid-filters li a.systems:hover:after, .nav-project-grid-filters li a.systems.active:after {
-          background: <?php echo '#' . $systems . ';'; ?>
+          background: #3db9ea;
         }
 
       /* Mini grid colors */
       .nav-project-items-mini-grid li.spaces a {
-        background: <?php echo '#' . $spaces . ';'; ?>
+        background: #AFB829;
       }
         .nav-project-items-mini-grid li.spaces a:hover, .nav-project-items-mini-grid li.spaces a.active {
-          background: <?php echo '#' . $spaces . ';'; ?>
+          background: #AFB829;
         }
       .nav-project-items-mini-grid li.objects a {
-        background: <?php echo '#' . $objects . ';'; ?>
+        background: #fcb748;
       }
         .nav-project-items-mini-grid li.objects a:hover, .nav-project-items-mini-grid li.objects a.active {
-          background: <?php echo '#' . $objects . ';'; ?>
+          background: #fcb748;
         }
       .nav-project-items-mini-grid li.systems a {
-        background: <?php echo '#' . $systems . ';'; ?>
+        background: #3db9ea;
       }
         .nav-project-items-mini-grid li.systems a:hover, .nav-project-items-mini-grid li.systems a.active {
-          background: <?php echo '#' . $systems . ';'; ?>
+          background: #3db9ea;
         }
 
       /* Projects grid h4 color */
       .projects-grid li.systems a .overlay h4 {
-        color: <?php echo '#' . $systems . ';'; ?>
+        color: #3db9ea;
       }
       .projects-grid li.spaces a .overlay h4 {
-        color: <?php echo '#' . $spaces . ';'; ?>
+        color: #AFB829;
       }
       .projects-grid li.objects a .overlay h4 {
-        color: <?php echo '#' . $objects . ';'; ?>
+        color: #fcb748;
       }
-
     </style>
+
     <?php wp_head(); ?> <!-- AVISAMOS QUE TERMINA EL HEAD -->
   </head>
   <body <?php body_class(); ?>>
