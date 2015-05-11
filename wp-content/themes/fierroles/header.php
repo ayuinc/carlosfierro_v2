@@ -13,15 +13,16 @@
 
     <?php 
       $categories = get_categories();
-      echo $categories;
       foreach($categories as $category) {
-        echo $category;
         if ($category->name == 'Spaces') {
           $spaces = $category->description;
+          echo $spaces;
         } elseif ($category->name == 'Objects') {
           $objects = $category->description;
+          echo $objects;
         } else {
           $systems = $category->description;
+          echo $systems;
         }
       }
     ?>
