@@ -160,36 +160,36 @@ $brand-systems: #3db9ea;
 		}
 	}
 	.spaces {
-		color: $brand-spaces;
+		// color: $brand-spaces;
 		&:after,
 		&:before {
-			background-color: $brand-spaces;
+			// background-color: $brand-spaces;
 		}
 		&.active,
 		&:hover {
-			color: darken($brand-spaces, 7%);
+			// color: darken($brand-spaces, 7%);
 		}
 	}
 	.objects {
-		color: $brand-objects;
+		// color: $brand-objects;
 		&:after,
 		&:before {
-			background-color: $brand-objects;
+			// background-color: $brand-objects;
 		}
 		&.active,
 		&:hover {
-			color: darken($brand-objects, 7%);
+			// color: darken($brand-objects, 7%);
 		}
 	}
 	.systems {
-		color: $brand-systems;
+		// color: $brand-systems;
 		&:after,
 		&:before {
-			background-color: $brand-systems;
+			// background-color: $brand-systems;
 		}
 		&.active,
 		&:hover {
-			color: darken($brand-systems, 7%);
+			// color: darken($brand-systems, 7%);
 		}
 	}
 }
@@ -221,17 +221,23 @@ $brand-systems: #3db9ea;
       }
      }
     .nav-project-items-mini-grid li.spaces a {
-      background-color: $brand-spaces; }
+      // background-color: $brand-spaces; 
+    }
       .nav-project-items-mini-grid li.spaces a:hover, .nav-project-items-mini-grid li.spaces a.active {
-        background-color: lighten($brand-spaces, 3%); }
+        // background-color: lighten($brand-spaces, 3%); 
+      }
     .nav-project-items-mini-grid li.objects a {
-      background-color: $brand-objects; }
+      // background-color: $brand-objects; 
+    }
       .nav-project-items-mini-grid li.objects a:hover, .nav-project-items-mini-grid li.objects a.active {
-        background-color: lighten($brand-objects, 3%); }
+        // background-color: lighten($brand-objects, 3%); 
+      }
     .nav-project-items-mini-grid li.systems a {
-      background-color: $brand-systems; }
+      // background-color: $brand-systems; 
+    }
       .nav-project-items-mini-grid li.systems a:hover, .nav-project-items-mini-grid li.systems a.active {
-        background-color: lighten($brand-systems, 3%); }
+        // background-color: lighten($brand-systems, 3%); 
+      }
 
 /*
 	projects-grid
@@ -366,7 +372,8 @@ $brand-systems: #3db9ea;
 	@include position(absolute, null null 0 ($container-fluid * 2));
 	@include transition(all 0.2s ease-in-out);
 	@include transform(translateY(100%));
-	height: $gallery-container-height - 35px;
+	@include calc(height, "100% - 35px");
+	// height: $gallery-container-height - 35px;
 	background-color: rgba(white, 0.9);
 	text-align: justify;
 	overflow: hidden;
