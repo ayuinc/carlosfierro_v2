@@ -62,7 +62,7 @@
         color: #fcb748;
       }
       .projects-grid .isotope-item.media-item > a {
-        height: 340px;
+        height: 340px !important;
       }
     </style>
 
