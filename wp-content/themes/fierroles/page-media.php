@@ -19,7 +19,7 @@
     <ul class="projects-grid isotope-container">
       <?php if ( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
         <li class="isotope-item media-item">
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php the_field('link'); ?>" target="_blank">
             <div class="project-thumbnail">
               <?php if( get_field('image') ): ?>
                 <img src="<?php the_field('image'); ?>" />
