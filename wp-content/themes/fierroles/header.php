@@ -61,6 +61,9 @@
       .projects-grid li.objects a .overlay h4 {
         color: #fcb748;
       }
+      .projects-grid .isotope-item.media-item > a {
+        height: 340px !important;
+      }
     </style>
 
     <?php wp_head(); ?> <!-- AVISAMOS QUE TERMINA EL HEAD -->
