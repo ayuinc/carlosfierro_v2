@@ -1,6 +1,7 @@
 <?php
 
 	add_theme_support( 'menus' );
+	load_theme_textdomain( 'silk-lite', get_template_directory() . '/languages' );
 	add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'full-width-thumbnail', 210, 9999, false );
@@ -36,5 +37,42 @@
 		$public_query_vars[] = 'lang';
 		return $public_query_vars;
 	}
+	add_action('after_setup_theme', 'filerroles_setup');
+	function filerroles_setup(){
+	    load_theme_textdomain('carlosfierroworks', get_template_directory() . '/languages');
+	}
 
+	load_theme_textdomain('carlosfierroworks', get_template_directory() . '/languages');
+
+	$locale = get_locale();
+	$locale_file = get_template_directory() . "/languages/$locale.php";
+
+
+	if ( is_readable( $locale_file ) )
+		require_once( $locale_file );
+	
+	add_filter( 'locale', 'change_locale');
+	function change_locale(){
+		$locale = 'en';
+		$lang = explode('/', $_SERVER['REQUEST_URI']);
+	        if(array_pop($lang) === '?lang=es'){
+	          $locale = 'es_PE';
+	        }else{
+	          $locale = 'en_EN';
+	        }
+	    return $locale;
+	}
+	load_default_textdomain();
+
+	add_filter( 'wp_get_nav_menu_items','nav_items', 11, 3 );
+
+	function nav_items( $items, $menu, $args ) 
+	{
+	    if(get_locale()==='es_PE'){
+	    	foreach ($items as $item) {
+	    		$item->url.="?lang=es";
+	    	}
+	    }
+	    return $items;
+	}
 ?>

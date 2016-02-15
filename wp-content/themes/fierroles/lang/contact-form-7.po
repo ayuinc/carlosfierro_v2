@@ -873,3 +873,8 @@ msgstr ""
 
 msgid "This input is too short."
 msgstr ""
+
+
+msgid "Spaces"
+msgstr "Espacios"
+
