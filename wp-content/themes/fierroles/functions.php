@@ -9,7 +9,8 @@
 	function register_theme_menus(){
 		register_nav_menus(
 			array(
-				'main-menu' => __('Main Menu')
+				'main-menu' => __('Main Menu'),
+				'main-menu-es' => __('Main Menu Spanish0')
 				)
 		);
 	}
@@ -28,5 +29,12 @@
 		wp_enqueue_script('scripts_js', get_template_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), '', true);
 	}
 	add_action('wp_enqueue_scripts', 'fierroles_theme_js');
+
+	add_filter('query_vars', 'add_my_var');
+
+	function add_my_var($public_query_vars) {
+		$public_query_vars[] = 'lang';
+		return $public_query_vars;
+	}
 
 ?>

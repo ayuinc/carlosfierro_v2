@@ -3,9 +3,12 @@
     <h1 class="h4 uppercase text-gray-darker lintel-regular m-0"><a href="<?php echo site_url(); ?>">Carlos Fierro</a></h1>
     <?php 
 
+      $lang = get_query_var( 'lang', en );
+      $menu = ($lang === "es")? 'main-menu-es' : 'main-menu';
+
       $defaults = array(
         'container' => false,
-        'theme_location' => 'main-menu',
+        'theme_location' => $menu,
         'menu_class' => 'list-unstyled uppercase lintel-regular pv-7 pv-14-xs mr-ch-14-xs mr-ch-14-sm'
         );
       wp_nav_menu ($defaults);
