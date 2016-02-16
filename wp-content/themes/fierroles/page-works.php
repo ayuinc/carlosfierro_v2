@@ -29,7 +29,13 @@
           <?php endif; ?>
           >
           <?php $image = get_field('image'); ?>
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php
+            $lang = get_query_var('lang', 'en' );
+            if($lang === 'es') {
+              echo the_permalink().'?lang=es';
+            }else{
+              echo the_permalink(); 
+              }  ?>">
             <div class="project-thumbnail">
               <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>" />
             </div>

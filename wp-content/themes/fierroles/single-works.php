@@ -19,7 +19,18 @@
       </div>
       <div class="project-details hidden-xs">
         <div class="project-details-scroll">
-          <?php the_content(); ?>
+          <?php
+            $lang = get_query_var( 'lang', en );
+            if($lang === 'es') {
+              $sp = get_field('spanish_post');
+              if($sp){
+                echo $sp;
+              }else{
+                echo the_content();
+              }
+            }else{
+              the_content();
+            } ?>
         </div>
         <div class="project-details-scroll-buttons">
           <div class="project-details-scroll-down"><i class="icon-chevron-down"></i></div>
@@ -58,6 +69,7 @@
         <span class="year"><?php the_field('year'); ?></span>
       </div>
       <?php the_content(); ?>
+
     </div>
     <?php endwhile; endif; ?>
   </main>
